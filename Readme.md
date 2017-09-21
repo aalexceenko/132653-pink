@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Алексеенко](https://up.htmlacademy.ru/adaptive/12/user/132653).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Могиль](https://htmlacademy.ru/profile/id398003).
 
 ---
 
