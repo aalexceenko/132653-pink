@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <header class="page-header">
+      <a href="#" class="page-header__logo"></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+    <form class="page-main__form competition">
+     <h1 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+     <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+    <fieldset class="competition__name">
+      <label for="surname">Фамилия:</label>
+      <input type="text" id="surname" name="surname" placeholder="Укажите фамилию <sup>*</sup>">
+       <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" placeholder="Введите ваше имя <sup>*</sup>">
+       <label for="patronymic">Отчество:</label>
+      <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+    </fieldset>
+     <fieldset class="competition__progress">
+      <legend class="competition__progress__title">Ваши безбашенные
+      достижения в путешествии</legend>
+        <label class="competiton__progress__item">
+          <input type="checkbox" checked>Сделал селфи с акулой
+        </label>
+        <label class="competiton__progress__item">
+          <input type="checkbox" checked>Обгорел на пляже
+        </label>
+        <label class="competiton__progress__item">
+          <input type="checkbox">Видел Чака Норриса
+        </label>
+        <label class="competiton__progress__item">
+          <input type="checkbox">Накупил сувениров
+        </label>
+        <label class="competiton__progress__item">
+          <input type="checkbox" checked>Удержал башню
+        </label>
+        <label class="competiton__progress__item">
+          <input type="checkbox">Разгромил отель
+        </label>
+     </fieldset>
+     <fieldset class="competition__contacs">
+       <label for="number">Номер телефона</label>
+        <input type="number" id="number" placeholder="Номер, пожалуйста">
+        <label for="mail">Адрес почты</label>
+        <input type="text" placeholder="Введите почту <sup>*</sup>" id="mail">
+     </fieldset>
+     <fieldset class="competition__os">
+      <label class="competition__os__item"><input type="radio" checked>Pink для  iOS</label>
+      <label class="competition__os__item"><input type="radio">Pink на Android</label>
+      <label class="competition__os__item"><input type="radio">Windows Phone</label>
+     </fieldset>
+     <fieldset class="competition__feedback">
+     <legend class="competition__feedback__title">Опишите свои эмоции</legend>
+      <textarea name="competition__feadback__text" placeholder="Можно прям в красках, не стесняясь в выражения" cols="30" rows="10"></textarea>
+     </fieldset>
+     <button class="competition__button">Отправить форму</button>
+      </form>
+      <p class="page-main__title"><sup>*</sup> - обязательные поля</p>
+    </main>
+    <footer class="footer">
+      <img src="#" alt="pink-logo" class="footer__pink-logo">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+             <a href="#" class="social__link social__link--twitter"></a>
+          </li>
+          <li class="social__item">
+             <a href="#" class="social__link social__link--facebook"></a>
+          </li>
+          <li class="social__item">
+             <a href="#" class="social__link social__link--youtube"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__item"><img src="#" alt="htmlacademy" class="copyright__list"></a>
+      </div>
+    </footer>
+</body>
+</html>
