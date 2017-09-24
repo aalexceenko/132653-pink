@@ -5,8 +5,138 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="page-header">
+      <a href="#" class="page-header__logo"></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение</h1>
+      <section class="intro">
+        <img src="http://placehold.it/150x100" alt="pink-intro" class="intro__img">
+        <a href="#" class="intro__downland"></a>
+        <ul class="intro__list">
+          <li class="intro__item">
+            <a href="#" class="os__list os__list--ios"></a>
+          </li>
+          <li class="intro__item">
+            <a href="#" class="os__list os__list--android"></a>
+          </li>
+          <li class="intro__item">
+            <a href="#" class="os__list os__list--windows"></a>
+          </li>
+        </ul>
+        <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="info">
+        <p class="info__text">Устали от серости мегаполиса?<br>
+        Нам есть, что вам предложить!</p>
+        <div class="info advantages">
+          <article class="advantages__item mood">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </article>
+           <article class="advantages__item world">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </article>
+           <article class="advantages__item friends">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </article>
+        </div>
+        <img src="http://placehold.it/150x100" alt="Всем привет" class="pink-info">
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visualy-hidden">Отзывы о нас</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__autor-name">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+<!--
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__autor-name"></cite>
+              <p class="reviews__text"></p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__autor-name"></cite>
+              <p class="reviews__text"></p>
+            </blockquote>
+-->
+            <p class="reviews__toggles slider__toggles">
+              <button class="slider__toggle" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+       <h2 class="visualy-hidden">Цены</h2>
+       <div class="price__wrapper price-slider">
+         <ul class="price__item price-slider__item standart">
+          <li class="standart">Стандарт <br>3,99 USD </li>
+          <li class="standart">розовый фильтр</li>
+          <li class="standart">смайлики</li>
+          <li class="standart">комментарии</li>
+         </ul>
+<!--
+         <ul class="price__item price-slider__item standart">
+          <li class="standart">Стандарт <br>3,99 USD </li>
+          <li class="standart">розовый фильтр</li>
+          <li class="standart">смайлики</li>
+          <li class="standart">комментарии</li>
+         </ul>
+         <ul class="price__item price-slider__item standart">
+          <li class="standart">Стандарт <br>3,99 USD </li>
+          <li class="standart">розовый фильтр</li>
+          <li class="standart">смайлики</li>
+          <li class="standart">комментарии</li>
+         </ul>
+-->
+        <p class="price__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+       </div>
+      </section>
+    </main>
+   <footer class="page-footer">
+      <section class="contacts">
+       <h2 class="contacs__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <a href="+78125556666" class="contacs__number">
+          <span class="contacs__number-mobile">Звоните:</span> +7 (812) 555-66-66
+        </a>
+        <a href="mail@htmlacademy.ru" class="contacs__mail">
+          <span class="contacs__mail-text">Пишите:</span> mail@htmlacademy.ru
+        </a>
+        <p class="contacs__adress-title">Приезжайте в гости:
+          <span class="contacs__adress">ул. Большая Конюшенная, 19/8</span>
+        </p>
+        <div class="map">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
