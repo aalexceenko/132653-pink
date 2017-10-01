@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
@@ -29,17 +31,17 @@
     </header>
     <main class="page-main">
     <form class="page-main__form competition" method="post" action="https://echo.htmlacademy.ru">
-     <h1 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-     <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+      <h1 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
     <fieldset class="competition__name">
       <label for="surname">Фамилия:</label>
       <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
-       <label for="name">Имя:</label>
+      <label for="name">Имя:</label>
       <input type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
-       <label for="patronymic">Отчество:</label>
+      <label for="patronymic">Отчество:</label>
       <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
     </fieldset>
-     <fieldset class="competition__progress progress">
+    <fieldset class="competition__progress progress">
       <legend class="progress__title">Ваши безбашенные
       достижения в путешествии</legend>
         <label for="photo" class="progress__item">
@@ -60,23 +62,24 @@
         <label for="hotel" class="progress__item">
           <input id="hotel" name="hotel" type="checkbox">Разгромил отель
         </label>
-     </fieldset>
-     <fieldset class="competition__contacs">
-       <label for="number">Номер телефона</label>
-        <input type="tel" id="number" name="number" placeholder="Номер, пожалуйста">
-        <label for="mail">Адрес почты</label>
-        <input type="email" placeholder="Введите почту *" id="mail" name="mail" required>
-     </fieldset>
-     <fieldset class="competition__os os">
+    </fieldset>
+    <fieldset class="competition__contacs">
+      <label for="number">Номер телефона</label>
+      <input type="tel" id="number" name="number" placeholder="Номер, пожалуйста">
+      <label for="mail">Адрес почты</label>
+      <input type="email" placeholder="Введите почту *" id="mail" name="mail" required>
+    </fieldset>
+    <fieldset class="competition__os os">
+      <p class="os__text">С каким приложением путешествовали?</p>
       <label class="os__item"><input name="os" type="radio" checked>Pink для  iOS</label>
       <label class="os__item"><input name="os" type="radio">Pink на Android</label>
       <label class="os__item"><input name="os" type="radio">Windows Phone</label>
-     </fieldset>
-     <fieldset class="competition__feedback feedback">
-     <legend class="feedback__title">Опишите свои эмоции</legend>
+    </fieldset>
+    <fieldset class="competition__feedback feedback">
+      <legend class="feedback__title">Опишите свои эмоции</legend>
       <textarea name="feadback__text" placeholder="Можно прям в красках, не стесняясь в выражения" cols="30" rows="10"></textarea>
-     </fieldset>
-     <button class="competition__button" type="submit">Отправить форму</button>
+    </fieldset>
+    <button class="competition__button" type="submit">Отправить форму</button>
       </form>
       <p class="page-main__title">* - обязательные поля</p>
       <div class="pop-up--send pop-up visually-hidden">
@@ -91,17 +94,17 @@
       </div>
     </main>
     <footer class="footer">
-      <img src="#" alt="pink-logo" class="footer__pink-logo">
+      <img src="img/logo-pink-blue-mobile.svg" width="147px" height="41px" alt="pink-logo" class="footer__pink-logo">
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-             <a href="#" class="social__link social__link--twitter"></a>
+             <a href="#" class="social__link social__link--twitter"><img src="img/icon-twitter.svg" width="18px" height="15px" alt="twitter"></a>
           </li>
           <li class="social__item">
-             <a href="#" class="social__link social__link--facebook"></a>
+             <a href="#" class="social__link social__link--facebook"><img src="img/icon-facebook.svg" width="9px" height="19px" alt="facebook"></a>
           </li>
           <li class="social__item">
-             <a href="#" class="social__link social__link--youtube"></a>
+             <a href="#" class="social__link social__link--youtube"><img src="img/icon-youtube.svg" width="15px" height="14px" alt="youtube"></a>
           </li>
         </ul>
       </div>
