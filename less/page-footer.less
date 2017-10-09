@@ -1,20 +1,67 @@
-.contacs {
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+.page-footer {
+  min-height: 610px;
+  padding: 0 20px;
+  box-sizing: border-box;
 
-  &__title {
-    color: #283645;
-    margin-bottom: 40px;
+  &__pink-logo {
+    padding-left: 64px;
+    padding-bottom: 40px;
   }
-
-  &__number-mobile &__mail-text &__adress-title {
-    color: #283645;
-    font-size: 18px;
-    margin-bottom: 30px;
+   &__copyright {
+    text-align: center;
   }
+  &__text {
 
-  &__number &__mail &__adress {
+  }
+  &__list {
+    width: 32px;
+    height: 32px;
     color: #d22856;
-    text-decoration: none;
+  }
+  &__logo {
+    display: none;
+  }
+}
+@media (min-width: @tablet-width) {
+  .page-footer {
+
+
+    &__logo {
+      display: flex;
+      justify-content: space-between;
+       padding-top: 35px;
+//       position: relative;
+    }
+    &__pink-logo {
+    padding-left: 0;
+    padding-bottom: 0;
+      margin-top: -27px;
+  }
+    &__list {
+      padding-bottom: 35px;
+    }
+    &-text {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: normal;
+
+    }
+    &__copyright {
+      position: relative;
+    }
+    &__copyright::before {
+      content: url("../img/htmlacademy.svg");
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-footer {
+    &__logo {
+      margin-left: 130px;
+      margin-right: 130px;
+    }
   }
 }
