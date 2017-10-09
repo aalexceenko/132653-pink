@@ -1,16 +1,109 @@
 .advantages {
   background-color: #f2f2f2;
-  font-family: "Open Sans", sans-serif;
-  color: #283645;
+  padding-top: 50px;
+  height: 755px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 80px 522px;
+
+  &__item-img {
+    display: none;
+  }
 
   &__title {
-    font-size: 18px;
-    line-height: 24px;
+    line-height: 10px;
     color: #000000;
+    margin-top: 0;
+    text-align: center;
   }
 
   &__description {
     font-size: 14px;
     line-height: 24px;
+    text-align: center;
+    width: 260px;
+    margin: 20px 30px 40px;
+  }
+}
+@media (min-width: @tablet-width) {
+  .advantages {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 435px;
+    padding-top: 25px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 80px 522px;
+
+    &__item {
+      outline: 1px dashed black;
+      width: 310px;
+      margin-right: 20px;
+
+    }
+     &__title {
+      line-height: 24px;
+      text-align: left;
+       font-weight: normal;
+       margin-bottom: -5px;
+    }
+
+    &__description {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 16px;
+    margin-bottom: 35px;
+    }
+  }
+  .advantages::before {
+    content: url("../img/iphone-screen-mobile@1x.png");
+    top: 100px;
+    left: 20px;
+    position: absolute;
+  }
+}
+@media (min-width: @desktop-width) {
+  .advantages {
+    display: flex;
+    flex-direction: row;
+    padding: 0 130px 0 130px;
+    justify-content: space-between;
+     height: 470px;
+    align-items: flex-end;
+
+    &__item {
+      width: 235px;
+    height: 210px;
+    margin-right: 0;
+    }
+     &__title {
+       text-align: center;
+    color: #000000;
+    margin-bottom: -5px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+    }
+
+    &__description {
+      text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 35px;
+    padding-left: 7px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    width: 235px;
+    }
+  }
+  .advantages::before {
+    content: "";
   }
 }

@@ -1,16 +1,135 @@
 .reviews {
+  height: 380px;
+  padding-top: 50px;
+  box-sizing: border-box;
+
   &__autor-name {
-    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    display: block;
+    font-style: normal;
     color: #000000;
-    font-size: 18px;
-    line-height: 30px;
     font-weight: bold;
   }
 
+    &__autor-profession, &__prev, &__next {
+      display: none;
+    }
+
   &__text {
-    font-family: "Open Sans", sans-serif;
-    color: #283645;
     font-size: 14px;
-    line-height: 30px;
+    width: 280px;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 32px;
+
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__toggles {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 65px;
+  }
+}
+@media (min-width: @tablet-width) {
+  .reviews {
+    padding-top: 0;
+    margin-top: 135px;
+    margin-left: 20px;
+    margin-right: 20px;
+//    display: flex;
+//    flex-direction: column;
+    width: 620px;
+    &__wrapper {
+//      display: flex;
+//    flex-direction: column;
+    }
+      &__autor-name {
+    text-align: center;
+    font-style: normal;
+    color: #000000;
+    font-weight: bold;
+  }
+    &__autor-profession {
+      font-size: 14px;
+      line-height: 30px;
+      display: block;
+      text-align: center;
+      margin-top: 0;
+    }
+
+     &__prev, &__next {
+      display: none;
+    }
+
+  &__text {
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 32px;
+    width: 620px;
+
+  }
+
+  &__item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__toggles {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  }
+}
+@media (min-width: @desktop-width) {
+  .reviews {
+    &__wrapper {
+      width: 950px;
+      height: 218px;
+      margin: 0 auto;
+      outline: 1px dashed black;
+      margin-left: 130px;
+      margin-right: 130px;
+    }
+          &__autor-name {
+    text-align: center;
+    font-style: normal;
+    color: #000000;
+    font-weight: bold;
+            font-size: 24px;
+  }
+    &__autor-profession {
+      display: block;
+      text-align: center;
+      margin-top: 0;
+    }
+
+     &__prev, &__next {
+      display: block;
+    }
+
+  &__text {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 32px;
+    width: 620px;
+        margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  &__item {
+
+  }
+
+  &__toggles {
+display: none;
+  }
   }
 }

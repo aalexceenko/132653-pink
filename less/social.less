@@ -1,5 +1,40 @@
 .social {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    padding-left: 50px;
+    padding-bottom: 35px;
+    margin: 0;
+  }
+
   &__item {
     list-style: none;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #e9ebec;
+    border-radius: 50%;
+  }
+
+  &__link {
+    color: #d22856;
+    display: inline-block;
+
+    &-twitter {
+      padding-left: 16px;
+      padding-top: 8px;
+    }
+
+    &-facebook {
+      padding-left: 18px;
+      padding-top: 10px;
+    }
+
+    &-youtube {
+      padding-left: 18px;
+      padding-top: 7px;
+    }
   }
 }

@@ -8,7 +8,8 @@
 </head>
 <body>
   <header class="page-header">
-      <a href="#" class="page-header__logo"></a>
+      <a href="#" class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" alt="pink"></a>
+      <button class="page-header__btn"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -34,54 +35,65 @@
       <h1 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
     <fieldset class="competition__name">
-      <label for="surname">Фамилия:</label>
-      <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
-      <label for="name">Имя:</label>
-      <input type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
-      <label for="patronymic">Отчество:</label>
-      <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+      <label for="surname" class="competition__name-item">Фамилия:<br>
+        <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+      </label>
+      <label for="name" class="competition__name-item">Имя:<br>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+      </label>
+      <label for="patronymic" class="competition__name-item">Отчество:<br>
+        <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+      </label>
     </fieldset>
-    <fieldset class="competition__progress progress">
-      <legend class="progress__title">Ваши безбашенные
-      достижения в путешествии</legend>
-        <label for="photo" class="progress__item">
-          <input id="photo" name="photo" type="checkbox" checked>Сделал селфи с акулой
+    <fieldset class="competition__progress">
+      <p class="competition__progress-title">Ваши безбашенные
+      достижения в путешествии</p>
+        <label for="photo" class="competition__progress-item">
+          <input id="photo" name="photo" type="checkbox" checked>Сделал селфи с акулой<br>
         </label>
-        <label for="beach" class="progress__item">
-          <input id="beach" name="beach" type="checkbox" checked>Обгорел на пляже
+        <label for="beach" class="competition__progress-item">
+          <input id="beach" name="beach" type="checkbox" checked>Обгорел на пляже<br>
         </label>
-        <label for="actor" class="progress__item">
-          <input id="actor" name="actor" type="checkbox">Видел Чака Норриса
+        <label for="actor" class="competition__progress-item">
+          <input id="actor" name="actor" type="checkbox">Видел Чака Норриса<br>
         </label>
-        <label for="presents" class="progress__item">
-          <input id="presents" name="presents" type="checkbox">Накупил сувениров
+        <label for="presents" class="competition__progress-item">
+          <input id="presents" name="presents" type="checkbox">Накупил сувениров<br>
         </label>
-        <label for="attraction" class="progress__item">
-          <input id="attraction" name="attraction" type="checkbox" checked>Удержал башню
+        <label for="attraction" class="competition__progress-item">
+          <input id="attraction" name="attraction" type="checkbox" checked>Удержал башню<br>
         </label>
-        <label for="hotel" class="progress__item">
-          <input id="hotel" name="hotel" type="checkbox">Разгромил отель
+        <label for="hotel" class="competition__progress-item">
+          <input id="hotel" name="hotel" type="checkbox">Разгромил отель<br>
         </label>
     </fieldset>
     <fieldset class="competition__contacs">
-      <label for="number">Номер телефона</label>
-      <input type="tel" id="number" name="number" placeholder="Номер, пожалуйста">
-      <label for="mail">Адрес почты</label>
-      <input type="email" placeholder="Введите почту *" id="mail" name="mail" required>
+      <label for="number" class="competition__contacs-item">Номер телефона<br>
+        <input type="tel" id="number" name="number" placeholder="Номер, пожалуйста">
+      </label>
+      <label for="mail" class="competition__contacs-item">Адрес почты<br>
+        <input type="email" placeholder="Введите почту *" id="mail" name="mail" required>
+      </label>
     </fieldset>
-    <fieldset class="competition__os os">
-      <p class="os__text">С каким приложением путешествовали?</p>
-      <label class="os__item"><input name="os" type="radio" checked>Pink для  iOS</label>
-      <label class="os__item"><input name="os" type="radio">Pink на Android</label>
-      <label class="os__item"><input name="os" type="radio">Windows Phone</label>
+    <fieldset class="competition__os">
+      <p class="competition__os-text">С каким приложением путешествовали?</p>
+      <label class="competition__os-item">
+        <input name="os" type="radio" checked>Pink для  iOS<br>
+      </label>
+      <label class="competition__os-item">
+        <input name="os" type="radio">Pink на Android<br>
+      </label>
+      <label class="competition__os-item">
+        <input name="os" type="radio">Windows Phone<br>
+      </label>
     </fieldset>
-    <fieldset class="competition__feedback feedback">
-      <legend class="feedback__title">Опишите свои эмоции</legend>
-      <textarea name="feadback__text" placeholder="Можно прям в красках, не стесняясь в выражения" cols="30" rows="10"></textarea>
+    <fieldset class="competition__feedback">
+      <p class="competition__feedback-title">Опишите свои эмоции</p>
+      <textarea class="competition__feedback-text" name="competition__feedback-text" placeholder="Можно прям в красках, не стесняясь в выражения" cols="30" rows="10"></textarea>
     </fieldset>
     <button class="competition__button" type="submit">Отправить форму</button>
       </form>
-      <p class="page-main__title">* - обязательные поля</p>
+      <p class="page-main__title"><span>*</span> - обязательные поля</p>
       <div class="pop-up--send pop-up visually-hidden">
         <h2 class="pop-up__title">Ваша заявка отправлена</h2>
         <p class="pop-up__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
@@ -93,24 +105,24 @@
         <button class="pop-up__button">ОК</button>
       </div>
     </main>
-    <footer class="footer">
-      <img src="img/logo-pink-blue-mobile.svg" width="147px" height="41px" alt="pink-logo" class="footer__pink-logo">
-      <div class="footer__social social">
+    <footer class="page-footer">
+      <img src="img/logo-pink-blue-mobile.svg" width="147px" height="41px" alt="pink-logo" class="page-footer__pink-logo">
+      <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-             <a href="#" class="social__link social__link--twitter"><img src="img/icon-twitter.svg" width="18px" height="15px" alt="twitter"></a>
+             <a href="#" class="social__link social__link-twitter"><img src="img/icon-twitter.svg" width="18px" height="15px" alt="twitter"></a>
           </li>
           <li class="social__item">
-             <a href="#" class="social__link social__link--facebook"><img src="img/icon-facebook.svg" width="9px" height="19px" alt="facebook"></a>
+             <a href="#" class="social__link social__link-facebook"><img src="img/icon-facebook.svg" width="9px" height="19px" alt="facebook"></a>
           </li>
           <li class="social__item">
-             <a href="#" class="social__link social__link--youtube"><img src="img/icon-youtube.svg" width="15px" height="14px" alt="youtube"></a>
+             <a href="#" class="social__link social__link-youtube"><img src="img/icon-youtube.svg" width="15px" height="14px" alt="youtube"></a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__item"><img src="#" alt="htmlacademy" class="copyright__list"></a>
+      <div class="page-footer__copyright">
+        <b class="page-footer-text">Разработано</b>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__item"><img src="img/htmlacademy.svg" alt="htmlacademy" width="60px" height="60px" class="page-footer__list"></a>
       </div>
     </footer>
 </body>

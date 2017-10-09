@@ -1,40 +1,57 @@
 .upload {
   background-color: #f2f2f2;
+  padding: 20px 20px 40px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+
+  &__photo {
+    padding-bottom: 40px;
+  }
 
   &__button {
-    margin-top: 40px;
 
-    &--downland {
+    button {
+      font-size: 18px;
+      line-height: 18px;
       display: block;
       width: 275px;
       height: 50px;
-      border: 2px solid #d22856;
       border-radius: 50px;
       background-color: #f2f2f2;
-      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+    }
+
+    &-downland {
+      border: 2px solid #d22856;
       color: #d22856;
-      font-size: 18px;
-      line-height: 18px;
       margin-bottom: 10px;
     }
 
-    &--cancel {
-      display: block;
-      width: 275px;
-      height: 50px;
+    &-cancel {
       border: 2px solid #dddfe0;
-      border-radius: 50px;
-      background-color: #f2f2f2;
-      font-family: "Open Sans", sans-serif;
       color: #dddfe0;
-      font-size: 18px;
-      line-height: 18px;
-      margin-bottom: 40px;
     }
+  }
 
-    &__function {
+  &__function {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    align-content: center;
+
+    button {
       border: none;
       background-color: inherit;
     }
   }
+
+  &__toggle {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 250px;
+    margin-bottom: 65px;
+  }
 }
+

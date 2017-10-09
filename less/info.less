@@ -1,8 +1,62 @@
 .info {
-  font-family: "Open Sans", sans-serif;
-  color: #283645;
-
   &__text {
     font-size: 24px;
+    text-align: center;
+    margin-top: 46px;
+  }
+  &__text:last-of-type {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: @tablet-width) {
+  .info {
+    &__text {
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 55px;
+      margin-bottom: 0;
+    }
+
+    &__text:last-of-type {
+      margin-top: 12px;
+      margin-bottom: 100px;
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+   .info {
+//    &__text {
+//      font-size: 40px;
+//      line-height: 40px;
+//      text-align: center;
+//      margin-top: 55px;
+//      margin-bottom: 0;
+//    }
+//
+//    &__text:last-of-type {
+//      margin-top: 12px;
+//      margin-bottom: 100px;
+//      margin-left: 387px;
+//      margin-right: 387px;
+//    }
+     &__text {
+       width: 740px;
+        height: 172px;
+       margin: 0 auto;
+       margin-bottom: 165px;
+     }
+     &__text p:first-of-type {
+       margin-top: 75px;
+       margin-bottom: 20px;
+     }
+     &__text p:last-of-type {
+       padding-left: 160px;
+       padding-right: 160px;
+       margin-top: 0;
+     }
   }
 }

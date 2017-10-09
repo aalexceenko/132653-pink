@@ -8,7 +8,8 @@
 </head>
 <body>
   <header class="page-header">
-      <a href="#" class="page-header__logo"></a>
+      <a href="#" class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" alt="pink"></a>
+      <button class="page-header__btn"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -33,73 +34,89 @@
       <h1 class="photo__title">Фотографии пользователей</h1>
       <p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <div class="photo__lenta">
-        <blockquote class="photo__item">
+        <div class="photo__item">
           <img class="photo__author-image" src="img/panorama-mobile@1x.jpg" width="320px" height="137px" alt="Фото Анны">
-          <cite class="photo__author-name">Анна</cite>
-          <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-        </blockquote>
-        <blockquote class="photo__item">
+          <div class="photo__author">
+            <cite class="photo__author-name">Анна</cite>
+            <p class="photo__author-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          </div>
+        </div>
+        <div class="photo__item">
           <img class="photo__author-image" src="img/photo-car-mobile@1x.jpg" width="280px" height="180px" alt="Фото Левона">
-          <cite class="photo__author-name">Левон</cite>
-          <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        </blockquote>
-        <blockquote class="photo__item">
+          <div class="photo__author">
+            <cite class="photo__author-name">Левон</cite>
+            <p class="photo__author-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          </div>
+        </div>
+        <div class="photo__item">
           <img class="photo__author-image" src="img/photo-drumset-mobile@1x.jpg" width="280px" height="180px" alt="Фото Антона">
-          <cite class="photo__author-name">Антон</cite>
-          <p class="photo__text">Соседи будут рады!</p>
-        </blockquote>
-        <blockquote class="photo__item">
+          <div class="photo__author">
+            <cite class="photo__author-name">Антон</cite>
+            <p class="photo__author-text">Соседи будут рады!</p>
+          </div>
+       </div>
+        <div class="photo__item">
           <img class="photo__author-image" src="img/photo-window-mobile@1x.jpg" width="280px" height="180px" alt="Фото Бориса">
-          <cite class="photo__author-name">Борис</cite>
-          <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-        </blockquote>
-        <blockquote class="photo__item">
+          <div class="photo__author">
+            <cite class="photo__author-name">Борис</cite>
+            <p class="photo__author-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          </div>
+        </div>
+        <div class="photo__item">
           <img class="photo__author-image" src="img/photo-fair-mobile@1x.jpg" width="280px" height="180px" alt="Фото Сергея">
-          <cite class="photo__author-name">Сергей</cite>
-          <p class="photo__text">Самая кубанская в мире!</p>
-        </blockquote>
-        <blockquote class="photo__item">
+          <div class="photo__author">
+            <cite class="photo__author-name">Сергей</cite>
+            <p class="photo__author-text">Самая кубанская в мире!</p>
+          </div>
+        </div>
+        <div class="photo__item">
           <img class="photo__author-image" src="img/photo-pov-mobile@1x.jpg" width="280px" height="180px" alt="Фото Максима">
-          <cite class="photo__author-name">Максим</cite>
-          <p class="photo__text">Где снег-то?</p>
-        </blockquote>
-        <blockquote class="photo__item">
+          <div class="photo__author">
+            <cite class="photo__author-name">Максим</cite>
+            <p class="photo__author-text">Где снег-то?</p>
+          </div>
+        </div>
+        <div class="photo__item">
           <img class="photo__author-image" src="img/photo-wing-mobile@1x.jpg" width="280px" height="180px" alt="Фото Надежды">
-          <cite class="photo__author-name">Надежда</cite>
-          <p class="photo__text">Всем GM и взаимные лайки!</p>
-        </blockquote>
+          <div class="photo__author">
+            <cite class="photo__author-name">Надежда</cite>
+            <p class="photo__author-text">Всем GM и взаимные лайки!</p>
+          </div>
+        </div>
         <p class="photo__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <div class="upload">
         <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px" alt="#" class="upload__photo">
-        <button class="upload__fuction upload__fuction--cut"><img src="img/icon-editor-crop.svg" alt="crop" width="48px" height="48px"></button>
-        <button class="upload__fuction upload__fuction--colour"><img src="img/icon-editor-fill.svg" alt="fill" width="48px" height="48px"></button>
-        <button class="upload__fuction upload__fuction--bright"><img src="img/icon-editor-contrast.svg" alt="bright" width="32px" height="32px"></button>
+        <div class="upload__function" >
+          <button class="upload__fuction--cut"><img src="img/icon-editor-crop.svg" alt="crop" width="48px" height="48px"></button>
+          <button class="upload__fuction--colour"><img src="img/icon-editor-fill.svg" alt="fill" width="48px" height="48px"></button>
+          <button class="upload__fuction--bright"><img src="img/icon-editor-contrast.svg" alt="bright" width="32px" height="32px"></button>
+        </div>
         <input type="range" class="upload__toggle">
         <div class="upload__button">
-         <button class="upload__button--downland">Запостить</button>
-         <button class="upload__button--cancel">Отмена</button>
+         <button class="upload__button-downland">Запостить</button>
+         <button class="upload__button-cancel">Отмена</button>
         </div>
       </div>
     </main>
-    <footer class="footer">
-      <img src="img/logo-pink-blue-mobile.svg" width="147px" height="41px" alt="pink-logo" class="footer__pink-logo">
-      <div class="footer__social social">
+    <footer class="page-footer">
+      <img src="img/logo-pink-blue-mobile.svg" width="147px" height="41px" alt="pink-logo" class="page-footer__pink-logo">
+      <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-             <a href="#" class="social__link social__link--twitter"><img src="img/icon-twitter.svg" width="18px" height="15px" alt="twitter"></a>
+             <a href="#" class="social__link social__link-twitter"><img src="img/icon-twitter.svg" width="18px" height="15px" alt="twitter"></a>
           </li>
           <li class="social__item">
-             <a href="#" class="social__link social__link--facebook"><img src="img/icon-facebook.svg" width="9px" height="19px" alt="facebook"></a>
+             <a href="#" class="social__link social__link-facebook"><img src="img/icon-facebook.svg" width="9px" height="19px" alt="facebook"></a>
           </li>
           <li class="social__item">
-             <a href="#" class="social__link social__link--youtube"><img src="img/icon-youtube.svg" width="15px" height="14px" alt="youtube"></a>
+             <a href="#" class="social__link social__link-youtube"><img src="img/icon-youtube.svg" width="15px" height="14px" alt="youtube"></a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__item"><img src="#" alt="htmlacademy" class="copyright__list"></a>
+      <div class="page-footer__copyright">
+        <b class="page-footer-text">Разработано</b>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__item"><img src="img/htmlacademy.svg" alt="htmlacademy" width="60px" height="60px" class="page-footer__list"></a>
       </div>
     </footer>
 </body>
