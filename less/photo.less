@@ -1,44 +1,60 @@
 .photo {
   &__title {
     background-image: url("../img/bg-back-mobile@1x.jpg");
-    color: #ffffff;
-    font-size: 24px;
-    margin-top: 35px;
-    margin-bottom: 55px;
-    list-style: none;
+    background-size: cover;
     height: 172px;
-    margin: 0;
-    font-weight: normal;
-    box-sizing: border-box;
-    padding-top: 35px;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 54px;
+    width: 320px;
+    margin: 0 auto 55px;
+
+    h1 {
+      font-weight: normal;
+      text-align: center;
+      box-sizing: border-box;
+      padding-top: 35px;
+      color: #ffffff;
+      font-size: 24px;
+      width: 182px;
+      height: 52px;
+      margin: 0 auto;
+    }
   }
 
-  &__text {
-    color: #283645;
+   &__text {
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
     font-size: 14px;
-    line-height: 30px;
-    margin-bottom: 50px;
+    margin: 0 auto 55px;
+    width: 248px;
+    height: 78px;
   }
 
-  &__item {
-    padding: 0 20px 20px;
+  &-text {
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
+  &__first {
+    width: 320px;
+    margin: 0 auto;
+
+    &-img {
+      width: 320px;
+      height: 138px;
+    }
+
+    div {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
   }
 
-  &__item:first-of-type {
-    padding: 0;
-    padding-bottom: 20px;
+  &__lenta {
+    width: 280px;
+    margin: 0 auto;
   }
 
-  &__item:first-of-type div {
-    margin-left: 20px;
-  }
   &__author {
     width: 280px;
 //    height: 192px;
@@ -48,18 +64,158 @@
     padding-left: 15px;
     padding-top: 15px;
 
+     &-text {
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
     &-name {
       font-weight: bold;
       font-size: 14px;
       line-height: 24px;
       font-style: normal;
+
+      span {
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 12px;
+      }
     }
 
-    &-text {
-      font-size: 14px;
-      line-height: 24px;
-      margin-top: -3px;
-      margin-bottom: 0px;
+    &-like {
+      padding-left: 30px;
+      text-transform: uppercase;
+      color: #d22856;
+      font-size: 12px;
+      margin-top: 15px;
+    }
+  }
+
+  &__description {
+    margin: 55px auto 45px;
+    font-size: 14px;
+    width: 280px;
+    height: 80px;
+    text-align: center;
+  }
+}
+@media (min-width: @tablet-width) {
+  .photo {
+
+    &__title {
+      height: 330px;
+      padding-top: 85px;
+      padding-bottom: 135px;
+      box-sizing: border-box;
+      width: 660px;
+
+      h1 {
+        width: 387px;
+        height: 113px;
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: normal;
+      }
+    }
+
+    &__lenta {
+      width: 620px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 300px;
+      height: 455px;
+      margin-bottom: 20px;
+
+      &-img {
+        width: 300px;
+        height: 302px;
+
+      }
+
+    }
+
+    &__author {
+      width: 300px;
+      height: 156px;
+      margin-bottom: 20px;
+      padding-left: 25px;
+
+      &-like {
+        padding-left: 0;
+      }
+
+    }
+
+    &__text {
+      width: 456px;
+      height: 70px;
+      font-size: 18px;
+      line-height: 30px;
+
+    }
+
+    &__first {
+      width: 660px;
+      margin: 0 auto;
+
+      &-img {
+        width: 660px;
+        height: 512px;
+      }
+
+      div {
+        width: 620px;
+        margin-bottom: 50px;
+      }
+    }
+
+
+
+    &__description {
+      width: 436px;
+      height: 80px;
+      margin: 50px auto 47px;
+    }
+
+
+
+
+
+  }
+}
+@media (min-width: @desktop-width) {
+  .photo {
+    &__title {
+      width: 1200px;
+    }
+    &__text {
+      width: 579px;
+      height: 65px;
+    }
+
+     &__lenta {
+      width: 940px;
+    }
+
+       &__first {
+      width: 1200px;
+      margin: 0 auto;
+
+      &-img {
+        width: 1200px;
+        height: 505px;
+      }
+
+      div {
+        width: 940px;
+        margin-bottom: 50px;
+      }
     }
   }
 }

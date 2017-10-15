@@ -1,6 +1,8 @@
 .contacts {
   font-size: 24px;
 //  width: 320px;
+  width: 280px;
+  margin: 0 auto;
 
   &__title {
     color: #283645;
@@ -27,9 +29,7 @@
     display: block;
     text-align: center;
     font-size: 24px;
-    padding-left: 40px;
     box-sizing: border-box;
-    padding-right: 40px;
     padding-bottom: 30px;
   }
 //  &__logo {
@@ -38,6 +38,8 @@
 }
 @media (min-width: @tablet-width) {
   .contacts {
+    width: 620px;
+    margin: 0 auto;
   &__title {
     font-size: 40px;
     line-height: 40px;
@@ -69,27 +71,37 @@
   }
 }
 @media (min-width: @desktop-width) {
-    .contacts {
-  &__title {
-    font-size: 40px;
-    line-height: 40px;
-  }
+  .contacts {
+    margin: 0 auto;
+     width: 940px;
+
+
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
     &__wrapper {
       flex-wrap: nowrap;
-      margin-left: 130px;
-      margin-right: 130px;
+//      margin-left: 130px;
+//      margin-right: 130px;
+      margin: 0 auto;
     }
+
     &__number, &__mail, &__adress {
       width: 310px;
       outline: 1px dashed black;
     }
+
     &__adress {
       flex-grow: 0;
       margin-top: 0;
     }
-      &__mail {
-        order: 1;
-      }
+
+    &__mail {
+      order: 1;
+    }
+
     &__map {
       height: 375px;
       outline: 1px dashed black;
@@ -98,5 +110,5 @@
         display: none;
       }
     }
-}
+  }
 }

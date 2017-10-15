@@ -2,7 +2,13 @@
   height: 380px;
   padding-top: 50px;
   box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
   &__autor-name {
     text-align: center;
     display: block;
@@ -17,11 +23,8 @@
 
   &__text {
     font-size: 14px;
-    width: 280px;
     text-align: center;
-    padding: 0 20px;
     margin-bottom: 32px;
-
   }
 
   &__item {
@@ -38,20 +41,25 @@
   .reviews {
     padding-top: 0;
     margin-top: 135px;
-    margin-left: 20px;
-    margin-right: 20px;
+
 //    display: flex;
 //    flex-direction: column;
     width: 620px;
     &__wrapper {
+      width: 620px;
+      margin: 0 auto;
 //      display: flex;
 //    flex-direction: column;
+    }
+    &__list {
+      margin: 0 auto;
     }
       &__autor-name {
     text-align: center;
     font-style: normal;
     color: #000000;
     font-weight: bold;
+        order: 1;
   }
     &__autor-profession {
       font-size: 14px;
@@ -59,6 +67,7 @@
       display: block;
       text-align: center;
       margin-top: 0;
+      order: 1;
     }
 
      &__prev, &__next {
@@ -89,13 +98,16 @@
 }
 @media (min-width: @desktop-width) {
   .reviews {
+    width: 940px;
     &__wrapper {
-      width: 950px;
+      width: 940px;
       height: 218px;
       margin: 0 auto;
       outline: 1px dashed black;
-      margin-left: 130px;
-      margin-right: 130px;
+
+    }
+      &__list {
+      margin: 0 auto;
     }
           &__autor-name {
     text-align: center;

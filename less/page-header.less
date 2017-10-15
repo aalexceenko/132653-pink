@@ -1,60 +1,81 @@
 .page-header {
-  display: flex;
-  padding: 18px 20px;
-  justify-content: space-between;
-  background-color: lighten(#1d2631, 30%);
+//  background-color: lighten(#1d2631, 30%);
   min-height: 65px;
-  box-sizing: border-box;
+  padding: 0;
+  width: 320px;
+  margin: 0 auto;
+  background-color: #283645;
 
-  &__btn {
-    list-style: none;
-    width: 50px;
-    height: 28px;
-    background-image: url("../img/icon-menu-burger.svg");
+  &__wrapper {
+//    width: 320px;
+//    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+//    padding: 20px 0;
+    justify-content: space-between;
   }
-  &__logo:nth-of-type(2) {
-    display: none;
+
+  &__logo {
+    display: block;
+
+    height: 70px;
+    outline: 1px dashed black;
+    padding-left: 20px;
+    padding-top: 23px;
+    box-sizing: border-box;
   }
 }
-.main-nav {
-  display: none;
-}
+
 @media (min-width: @tablet-width) {
   .page-header {
-    display: flex;
-    padding: 25px 20px;
-    justify-content: space-between;
-    background-color: lighten(#1d2631, 30%);
     min-height: 110px;
-    box-sizing: border-box;
+    width: 660px;
 
-    &__logo:nth-of-type(1) {
-     display: none;
+    &__logo {
+//      padding-left: 20px;
     }
-    &__logo:nth-of-type(2) {
-      display: block;
-    width: 150px;
-    height: 60px;
-    outline: 1px dashed;
-    }
+
+    &__wrapper {
+          display: flex;
+//    padding: 25px 20px;
+    justify-content: space-between;
+//      margin: 0 auto;
+  }
+
+//    &__logo:nth-of-type(2) {
+//      display: block;
+//    width: 150px;
+//    height: 60px;
+//    outline: 1px dashed;
+//    }
   }
 }
 @media (min-width: @desktop-width) {
   .page-header {
-    display: flex;
-    padding-left: 130px;
-    padding-right: 130px;
-    box-sizing: border-box;
+    width: 1200px;
+    padding-top: 20px;
+//    display: flex;
+//    padding-left: 130px;
+//    padding-right: 130px;
+//    box-sizing: border-box;
 
-      &__logo:nth-of-type(1), &__btn {
-     display: none;
+    &__logo {
+
     }
 
-    &__logo:nth-of-type(2) {
-      display: block;
-    width: 150px;
-    height: 60px;
-    outline: 1px dashed;
-    }
+    &__wrapper {
+    width: 940px;
+       display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+  }
+
+
+//    &__logo:nth-of-type(2) {
+//      display: block;
+//    width: 150px;
+//    height: 60px;
+//    outline: 1px dashed;
+//    }
   }
 }
