@@ -10,7 +10,13 @@
   <body>
   <header class="page-header ">
     <div class="page-header__wrapper">
-      <a href="#" class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" alt="логотип" width="75px" height="24px" ></a>
+      <a href="#" class="page-header__logo">
+       <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+      </picture>
+      </a>
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -36,12 +42,6 @@
     <h1 class="visually-hidden">Приложение</h1>
     <section class="intro">
       <div class="intro__wrapper">
-        <div class="intro__img">
-          <!--
-          <img src="img/bg-back-mobile@1x.jpg" alt="theatre" width="700px" height="462px">
-          <img src="img/iphone-hand-mobile@1x.png" width="258px" height="286px" alt="pink-intro">
-          -->
-        </div>
         <h1 class="intro__h1">Взгляните на жизнь иначе!</h1>
         <a href="#" class="intro__downland">Скачать приложение</a>
         <ul class="intro__list">
@@ -75,8 +75,7 @@
             <h3 class="advantages__title">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </article>
-            <article class="advantages__item">
-            <!--            <img class="advantages__item-img" src="img/iphone-screen-mobile@1x.png" alt="Заводит новых друзей">-->
+          <article class="advantages__item">
             <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </article>
@@ -171,7 +170,12 @@
       <img src="img/bg-map-mobile@1x.png" alt="map" width="320px" height="421px">
     </div>
     <section class="page-footer__logo">
-      <img src="img/logo-pink-blue-mobile.svg" width="147px" height="41px" alt="pink-logo" class="page-footer__pink">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+        <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+      </picture>
+<!--      <img src="img/logo-pink-blue-mobile.svg" width="147px" height="41px" alt="pink-logo" class="page-footer__pink">-->
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
