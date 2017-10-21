@@ -38,6 +38,11 @@
       text-align: left;
       padding-right: 10px;
       margin-top: 10px;
+      margin-bottom: 4px;
+
+      br {
+        display: none;
+      }
     }
 
     &__href {
@@ -49,16 +54,46 @@
     &__item {
       outline: 1px dashed black;
       width: 310px;
+
+      svg {
+        position: absolute;
+        left: -16px;
+    bottom: -21px;
+        width: 270px;
+        height: 270px;
+        fill: #dedede;
+        border: 5px;
+
+      }
     }
   }
+
+  &__icon-timer {
+    fill: #dedede;
+  }
+
   .round::before {
-    content: url("../img/");
-    outline: 1px dashed black;
+content: "";
+    color: #d22856;
+    border: 12px solid #d22856;
     position: absolute;
-    width: 284px;
-    height: 283px;
-    top: 59px;
-    left: 0px;
+    width: 174px;
+    border-radius: 50%;
+    height: 174px;
+    top: 118px;
+    z-index: 1;
+    left: 39px;
+    
+  }
+  
+   .round::after {
+    content: "24";
+    color: #d22856;
+    font-size: 99px;
+    font-weight: bold;
+    position: absolute;
+    top: 196px;
+    left: 83px;
   }
 }
 @media (min-width: @desktop-width) {
@@ -68,35 +103,80 @@
     width: 1200px;
     margin: 0 auto;
 
+
     &__wrapper {
       width: 940px;
     }
 
     &__item {
       width: 580px;
-      height: 212px;
+      height: 242px;
+       padding-left: 8px;
+      box-sizing: border-box;
+      
+      svg {
+           position: absolute;
+    left: -18px;
+    bottom: -41px;
+    width: 337px;
+    height: 341px;
+    fill: #dedede;
+    border: 5px;
+      }
 
     }
        &__title {
       font-size: 30px;
-      padding-right: 140px;
+
       margin-bottom: 0;
-      margin-top: 0;
+      margin-top: 32px;
          color: #000000;
+
+         br {
+           display: none;
+         }
     }
 
     &__description {
       text-align: left;
-      padding-right: 40px;
-      margin-top: 25px;
+      padding-right: 46px;
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 31px;
+
+      br {
+        display: block;
+      }
     }
 
     &__href {
       color: #d22856;
+      font-size: 18px;
+      line-height: 30px;
     }
   }
-  .round::before {
-    left: 130px;
+  
+   
+  
+  
+   .round::before {
+  
+    border: 16px solid #d22856;
+ 
+    width: 218px;
+  
+    height: 220px;
+    top: 110px;
+  
+    left: 157px;
+    
+  }
+  
+   .round::after {
+ top: 214px;
+    left: 212px;
+     font-size: 120px;
   }
 }
 

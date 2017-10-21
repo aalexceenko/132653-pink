@@ -1,11 +1,29 @@
 .page-header {
-//  background-color: lighten(#1d2631, 30%);
-  min-height: 65px;
-  padding: 0;
-  width: 320px;
-  margin: 0 auto;
-  background-color: #283645;
-
+min-height: 65px;
+    background-color:#283645;
+    right: 0;
+    
+    padding: 0;
+    width: 320px;
+    left: 0;
+    margin: 0 auto;
+  &--menu-closed {
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  &--menu-closed .main-nav {
+    display:none;
+  }
+  &--menu-closed &__toggle::before {
+    background:none;
+  }
+  &--menu-closed &__toggle::after {
+    background:none;
+  }
+  &--menu-closed &__toggle {
+    background:url("../img/icon-menu-burger.svg") no-repeat;
+    background-size:cover;
+  }
   &__wrapper {
 //    width: 320px;
 //    margin: 0 auto;
@@ -20,19 +38,66 @@
 
     height: 70px;
     outline: 1px dashed black;
-    padding-left: 20px;
     padding-top: 8px;
     box-sizing: border-box;
-  }
-}
 
+    svg {
+    position: relative;
+    left: -50px;
+    bottom: 3px;
+    }
+  }
+
+&__toggle {
+    position: absolute;
+    top: 25px;
+    right: 80px;
+    z-index: 2;
+    display: none;
+    width: 50px;
+    height: 20px;
+    background-color: #283645;
+    cursor: pointer;
+    border: none;
+
+
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    left: 20px;
+
+    width: 36px;
+    height: 4px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+  }
 @media (min-width: @tablet-width) {
   .page-header {
     min-height: 110px;
     width: 660px;
 
     &__logo {
-//      padding-left: 20px;
+height: 110px;
+      padding-top: 26px;
+      svg {
+    position: relative;
+    left: 21px;
+    bottom: 0px;
+    }
     }
 
     &__wrapper {
@@ -53,7 +118,7 @@
 @media (min-width: @desktop-width) {
   .page-header {
     width: 1200px;
-    padding-top: 20px;
+
     position: absolute;
     background-color: rgba(0,0,0,0.3);
     top: 0;
@@ -69,7 +134,12 @@
 //    box-sizing: border-box;
 
     &__logo {
-
+        padding-top: 20px;
+    svg {
+    position: relative;
+    left: 2px;
+    bottom: -7px;
+    }
     }
 
     &__wrapper {
@@ -87,4 +157,5 @@
 //    outline: 1px dashed;
 //    }
   }
+}
 }

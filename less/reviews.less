@@ -1,6 +1,6 @@
 .reviews {
-  height: 380px;
-  padding-top: 50px;
+  height: 344px;
+  padding-top: 41px;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -8,6 +8,10 @@
   &__wrapper {
     width: 280px;
     margin: 0 auto;
+    
+    svg {
+        display: none;
+      }
   }
   &__autor-name {
     text-align: center;
@@ -24,7 +28,7 @@
   &__text {
     font-size: 14px;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 
   &__item {
@@ -34,7 +38,32 @@
   &__toggles {
     text-align: center;
     margin-top: 0;
+    width: 63px;
     margin-bottom: 65px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    button:first-child {
+          list-style: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 7px;
+    background-color: white;
+    /* border-color: red; */
+    padding: 0;
+    border: 3px solid #283645;
+    }
+
+    button:not(:first-child) {
+          height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #bec2c7;
+    padding: 0;
+    border: 0;
+          margin-top: 3px;
+    }
   }
 }
 @media (min-width: @tablet-width) {
@@ -50,6 +79,10 @@
       margin: 0 auto;
 //      display: flex;
 //    flex-direction: column;
+      
+      svg {
+        display: none;
+      }
     }
     &__list {
       margin: 0 auto;
@@ -58,8 +91,11 @@
     text-align: center;
     font-style: normal;
     color: #000000;
+         font-size: 20px;
+      line-height: 30px;
     font-weight: bold;
         order: 1;
+        padding-bottom: 4px;
   }
     &__autor-profession {
       font-size: 14px;
@@ -75,7 +111,9 @@
     }
 
   &__text {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: -12px;
     text-align: center;
     padding: 0;
     margin-bottom: 32px;
@@ -91,7 +129,7 @@
 
   &__toggles {
     text-align: center;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 0;
   }
   }
@@ -99,11 +137,24 @@
 @media (min-width: @desktop-width) {
   .reviews {
     width: 940px;
+    position: relative;
     &__wrapper {
       width: 940px;
-      height: 218px;
+      height: 235px;
       margin: 0 auto;
       outline: 1px dashed black;
+      
+       svg {
+          position: absolute;
+    left: 435px;
+    bottom: 292px;
+    width: 77px;
+    height: 170px;
+    display: block;
+    fill: #efefef;
+  
+
+      }
 
     }
       &__list {
@@ -114,23 +165,42 @@
     font-style: normal;
     color: #000000;
     font-weight: bold;
+
             font-size: 24px;
   }
     &__autor-profession {
       display: block;
       text-align: center;
       margin-top: 0;
+      font-size: 18px;
+      line-height: 30px;
     }
-
-     &__prev, &__next {
-      display: block;
+    button {
+     display: none;
+    }
+    
+    &__text::before {
+      position: absolute;
+      content: url("../img/icon-review-arrow-left.svg");
+      top: 75px;
+      left: 0;
+     
+    }
+      &__text::after {
+      position: absolute;
+      content: url("../img/icon-review-arrow-right.svg");
+      top: 75px;
+       
+      right: 0;
     }
 
   &__text {
     text-align: center;
     padding: 0;
     margin-bottom: 32px;
-    width: 620px;
+    width: 690px;
+        box-sizing: border-box;
+    padding-top: 60px;
         margin-left: auto;
     margin-right: auto;
 

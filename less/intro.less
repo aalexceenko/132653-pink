@@ -1,7 +1,7 @@
 .intro {
 
 
-      height: 700px;
+      height: 668px;
     background-color: #1d2631;
     width: 320px;
     margin: 0 auto;
@@ -10,11 +10,9 @@
     padding-top: 400px;
     background-repeat: no-repeat;
     background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-size: cover 400px;
-    background-position: center -4px;
-    background-size: auto 400px;
+background-position: -191px -66px;
 
-//  background-image: url("../img/iphone-hand-mobile@1x.png");
+
 
 
 
@@ -49,17 +47,17 @@
   }
 
   &__downland {
-    color: white;
+color: white;
     font-weight: bold;
     text-decoration: none;
     display: block;
     width: 280px;
-    height: 49px;
+    height: 52px;
     border: 2px solid white;
     text-align: center;
     padding-top: 13px;
     border-radius: 50px;
-    margin: 30px 0 30px;
+    margin: 26px 0 30px;
     box-sizing: border-box;
     line-height: 18px;
   }
@@ -72,12 +70,28 @@
     height: 57px;
     margin: 0 37px 28px;
     padding: 0;
+    justify-content: space-between;
   }
 
   &__item {
     list-style: none;
-    display: inline-block;
+    display: block;
+    width: 44px;
+    position: relative;
+
+
+
+//    &-ios {
+//      fill: red;
+//    }
   }
+    &__item:nth-of-type(2) {
+      top: 10px;
+    }
+
+    &__item:nth-of-type(3) {
+      top: 10px;
+    }
 
   &__text {
     color: white;
@@ -92,13 +106,14 @@
 }
 @media (min-width: @tablet-width) {
   .intro {
-  padding-top: 104px;
+  padding-top: 97px;
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
     width: 660px;
     height: 620px;
-    background-size: auto 620px;
+    background-size: auto 720px;
+    background-position: -252px -100px;
     background-image: url(../img/bg-back-tablet@1x.jpg);
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -114,10 +129,10 @@
     &::after {
          content: url("../img/iphone-hand-tablet@1x.png");
       position: relative;
-      bottom: 438px;
-      left: -19px;
-      width: 700px;
-      height: 545px;
+      bottom: 434px;
+      left: -39px;
+//      width: 700px;
+//      height: 545px;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -142,29 +157,31 @@
       outline: 1px dashed white;
       text-align: center;
       color: #ffffff;
-      font-weight: normal;
+      font-weight: lighter;
       font-size: 40px;
-      line-height: 40px;
-      font-weight: normal;
+      line-height: 46px;
+
       padding-left: 55px;
       padding-right: 52px;
       box-sizing: border-box;
-      margin-bottom: 35px;
+      margin-bottom: 37px;
     }
 
     &__downland {
       margin: 0;
       width: 300px;
-      margin-bottom: 45px;
+      margin-bottom: 47px;
     }
 
     &__list {
-      margin-bottom: 40px;
+      margin: 0 45px 35px;
+
     }
 
     &__text {
       font-size: 18px;
       text-align: inherit;
+      font-weight: lighter;
     }
   }
 }
@@ -182,7 +199,8 @@
 
         background-image: url("../img/bg-back-desktop@1x.jpg");
     outline: 1px dashed white;
-    background-size: auto 853px;
+   background-size: cover;
+    background-position: -680px 1px;
 
 
 
@@ -193,7 +211,7 @@
      &::after {
          content: url("../img/iphone-hand-desktop@1x.png");
       position: relative;
-      bottom: 485px;
+      bottom: 522px;
       left: 16px;
       width: 700px;
       height: 545px;
@@ -223,26 +241,30 @@
       text-align: center;
       color: #ffffff;
       font-size: 50px;
-      line-height: 40px;
-      font-weight: normal;
+      line-height: 58px;
+      font-weight: lighter;
       padding-left: 30px;
       padding-right: 32px;
       box-sizing: border-box;
-      margin-bottom: 60px;
+      margin-bottom: 92px;
     }
 
     &__downland {
       margin: 0;
+      font-size: 21px;
+      line-height: 18px;
       width: 300px;
-      margin-bottom: 60px;
+      margin-bottom: 68px;
     }
 
     &__list {
-      margin-bottom: 60px;
+      margin-bottom: 54px;
     }
 
     &__text {
       font-size: 18px;
+      line-height: 24px;
+      font-weight: lighter;
       text-align: inherit;
     }
   }

@@ -6,12 +6,12 @@
 
   &__title {
     color: #283645;
-    margin-bottom: 40px;
+    margin-bottom: 27px;
     font-size: 24px;
-    font-weight: normal;
+    font-weight: lighter;
     text-align: center;
     margin-top: 0;
-    padding-top: 48px;
+    padding-top: 44px;
   }
 
   &__number-mobile, &__mail-text, &__adress-title {
@@ -30,11 +30,10 @@
     text-align: center;
     font-size: 24px;
     box-sizing: border-box;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+    margin: 0;
   }
-//  &__logo {
-//    display: none;
-//  }
+
 }
 @media (min-width: @tablet-width) {
   .contacts {
@@ -43,6 +42,8 @@
   &__title {
     font-size: 40px;
     line-height: 40px;
+    padding-top: 53px;
+    margin-bottom: 47px;
   }
     &__wrapper {
       display: flex;
@@ -52,11 +53,15 @@
     &__number, &__mail, &__adress {
       width: 310px;
       outline: 1px dashed black;
+      font-weight: lighter;
     }
     &__adress {
       flex-grow: 1;
-      margin-top: 10px;
+      margin-top: 27px;
     }
+      &__adress br {
+    display: block;
+  }
     &__map {
       height: 375px;
       outline: 1px dashed black;
@@ -77,8 +82,9 @@
 
 
     &__title {
-      font-size: 40px;
-      line-height: 40px;
+      font-size: 50px;
+          line-height: 54px;
+    margin-top: 15px;
     }
 
     &__wrapper {
@@ -87,11 +93,19 @@
 //      margin-right: 130px;
       margin: 0 auto;
     }
+    &__number-mobile, &__mail-text, &__adress-title {
+      display: block;
+      padding-bottom: 0;
+    }
 
     &__number, &__mail, &__adress {
       width: 310px;
       outline: 1px dashed black;
+      padding-top: 10px;
     }
+//    &__number-mobile, &__mail-text, &__adress-title {
+//      padding-bottom: 30px;
+//    }
 
     &__adress {
       flex-grow: 0;

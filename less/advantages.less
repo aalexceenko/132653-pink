@@ -1,18 +1,29 @@
 .advantages {
   background-color: #f2f2f2;
-  padding-top: 50px;
-  height: 755px;
+  padding-top: 81px;
+  height: 697px;
   width: 320px;
-  margin: 0 auto;
+  margin: 40px auto 0;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 80px 522px;
+  background-position: 82px 500px;
 
 
 
 @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-screen-mobile@2x.png");
     }
+
+  &::before {
+    content: url(../img/bg-triangle-white.svg);
+    position: absolute;
+    /* width: 320px; */
+    height: -5px;
+    /* background-size: 320px 50px; */
+    top: 1177px;
+    left: -251px;
+    color: #ffffff;
+  }
 
 
 
@@ -30,6 +41,7 @@
 
   &__title {
     line-height: 10px;
+    font-size: 18px;
     color: #000000;
     margin-top: 0;
     text-align: center;
@@ -40,13 +52,13 @@
     line-height: 24px;
     text-align: center;
     width: 260px;
-    margin: 20px 0 40px;
+    margin: 17px auto 39px;
   }
 }
 @media (min-width: @tablet-width) {
   .advantages {
     width: 660px;
-    height: 435px;
+    height: 463px;
     padding-top: 25px;
 //    background-image: url("../img/iphone-screen-3-tablet@1x.png");
 //    background-repeat: no-repeat;
@@ -54,13 +66,17 @@
     background-image: none;
 
 
+ &::before {
+top: 1206px;
+    left: -185px;
 
+  }
 
 
     &::after {
       content: url("../img/iphone-screen-3-tablet@1x.png");
       position: relative;
-      top: -474px;
+      top: -473px;
       left: 20px;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -78,12 +94,17 @@
     position: relative;
     flex-direction: column;
     align-items: flex-end;
+       margin-top: 53px;
   }
 
     &__item {
       outline: 1px dashed black;
       width: 310px;
-      margin-right: 20px;
+
+
+
+
+    box-sizing: border-box;
 
     }
      &__item img {
@@ -92,7 +113,7 @@
      &__title {
       line-height: 24px;
       text-align: left;
-       font-weight: normal;
+       font-weight: bold;
        margin-bottom: -5px;
     }
 
@@ -104,6 +125,7 @@
     margin-right: 0;
     margin-top: 16px;
     margin-bottom: 35px;
+      width: 310px;
     }
   }
 //  .advantages__wrapper::before {
@@ -124,6 +146,13 @@
 //    align-items: flex-end;
     width: 1200px;
     margin: 0 auto;
+    height: 560px;
+
+     &::before {
+   top: 1176px;
+    left: 57px;
+
+  }
 
     &::after {
       display: none;
@@ -136,7 +165,7 @@
     flex-direction: row;
 //    padding: 0 130px 0 130px;
     justify-content: space-between;
-     height: 470px;
+     height: 541px;
     align-items: flex-end;
            padding-left: 30px;
            padding-right: 30px;
@@ -152,7 +181,7 @@
     &__item:first-of-type::after {
       content: url("../img/iphone-screen-1-desktop@1x.png");
       position: relative;
-      top: -569px;
+      top: -597px;
       left: -24px;
       width: 180px;
 
@@ -163,7 +192,7 @@
        &__item:nth-of-type(2)::after {
       content: url("../img/iphone-screen-2-desktop@1x.png");
       position: relative;
-      top: -569px;
+      top: -597px;
       left: -22px;
       width: 180px;
 
@@ -175,7 +204,7 @@
         &__item:nth-of-type(3)::after {
       content: url("../img/iphone-screen-3-desktop@1x.png");
       position: relative;
-      top: -545px;
+      top: -597px;
       left: -22px;
       width: 180px;
 
@@ -187,26 +216,24 @@
      &__title {
        text-align: center;
     color: #000000;
+       font-size: 30px;
+       line-height: 30px;
     margin-bottom: -5px;
     font-weight: bold;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 35px;
+
+    padding-bottom: 28px;
     }
 
     &__description {
       text-align: center;
-    margin-left: 0;
-    margin-right: 0;
+
     margin-top: 0;
+      font-size: 18px;
+      line-height: 30px;
     margin-bottom: 35px;
-    padding-left: 7px;
-    padding-right: 5px;
+
     box-sizing: border-box;
-    width: 235px;
+    width: 238px;
     }
-  }
-  .advantages::before {
-    content: "";
   }
 }

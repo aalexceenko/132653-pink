@@ -3,23 +3,12 @@
   position: relative;
   height: 255px;
   margin: 0 auto;
-
-  &__toggle {
-    position: absolute;
-    top: -40px;
-    right: 20px;
-    z-index: 2;
-    display: none;
-    width: 50px;
-    height: 20px;
-    background-color: #283645;
-    cursor: pointer;
-    border: none;
+  
 
 //    &:hover, &:active {
 //      background-color: #1c2530;
 //    }
-  }
+  
 
   &--closed &__toggle::before {
     position: absolute;
@@ -80,7 +69,7 @@
       text-decoration: none;
       text-align: center;
       height: 64px;
-      padding-top: 18px;
+      padding-top: 15px;
       box-sizing: border-box;
       color: #ffffff;
       line-height: 32px;
@@ -102,7 +91,7 @@
     &__list {
 
       a {
-//        width: 660px;
+      padding-top: 15px;
       }
     }
   }
@@ -112,6 +101,8 @@
     display: block;
     height: 50px;
     margin: 0;
+    margin-right: -39px;
+    margin-top: 30px;
 
     &__toggle {
       display: none;
