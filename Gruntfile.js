@@ -150,6 +150,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("build", ["clean", "copy", "svg_cleaner", "picture", "less", "postcss", "csso", "posthtml"]);
-  grunt.registerTask("picture", ["cwebp", "imagemin", "svgstore"]);
+  grunt.registerTask("picture", [/*"cwebp", "imagemin",*/ "svgstore"]);
 
 };
