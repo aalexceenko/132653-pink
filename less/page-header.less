@@ -1,161 +1,183 @@
 .page-header {
-min-height: 65px;
-    background-color:#283645;
-    right: 0;
-    
-    padding: 0;
-    width: 320px;
-    left: 0;
-    margin: 0 auto;
+  min-height: 65px;
+  background-color:#283645;
+  right: 0;
+  padding: 0;
+  width: 320px;
+  left: 0;
+  margin: 0 auto;
+  
   &--menu-closed {
     position:absolute;
     background-color: rgba(0, 0, 0, 0.3);
   }
+  
   &--menu-closed .main-nav {
     display:none;
   }
+  
   &--menu-closed &__toggle::before {
     background:none;
   }
+  
   &--menu-closed &__toggle::after {
     background:none;
   }
+  
   &--menu-closed &__toggle {
     background:url("../img/icon-menu-burger.svg") no-repeat;
     background-size:cover;
   }
+  
   &__wrapper {
-//    width: 320px;
-//    margin: 0 auto;
+    //    width: 320px;
+    //    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-//    padding: 20px 0;
+    flex-wrap: wrap;
+    //    padding: 20px 0;
     justify-content: space-between;
   }
 
   &__logo {
     display: block;
-
     height: 70px;
-    outline: 1px dashed black;
+   
     padding-top: 8px;
     box-sizing: border-box;
 
     svg {
-    position: relative;
-    left: -50px;
-    bottom: 3px;
+      position: relative;
+      left: -50px;
+      bottom: 3px;
     }
   }
+  &__logo:hover {
+    fill: #d22856;
+  }
 
-&__toggle {
-    position: absolute;
-    top: 25px;
-    right: 80px;
-    z-index: 2;
+  &__toggle {
+    position:relative;
     display: none;
+    top: 16px;
+    left: -15px;
     width: 50px;
-    height: 20px;
+    height: 25px;
     background-color: #283645;
     cursor: pointer;
     border: none;
+    page-break-after:always;
 
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      width: 30px;
+      height: 4px;
+      background-color: #ffffff;
+    }
 
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
 
-  &::before,
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 4px;
-    left: 20px;
-
-    width: 36px;
-    height: 4px;
-
-    background-color: #ffffff;
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
+  &__toggle:hover {
+      fill: #d22856;
+    }
+    &__toggle:active {
+      color: rgba(210,40,86, 0.3);
+    }
+}
 
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-  }
 @media (min-width: @tablet-width) {
   .page-header {
     min-height: 110px;
     width: 660px;
 
-    &__logo {
-height: 110px;
-      padding-top: 26px;
-      svg {
-    position: relative;
-    left: 21px;
-    bottom: 0px;
+    &__toggle {
+      top: 38px;
+      left: -18px;
+
+      &::before,
+      &::after {
+        top: 15px;
+        left: 20px;
+      }
     }
+
+    &__logo {
+      height: 110px;
+      padding-top: 26px;
+
+      svg {
+        position: relative;
+        left: 21px;
+        bottom: 0px;
+      }
     }
 
     &__wrapper {
-          display: flex;
-//    padding: 25px 20px;
-    justify-content: space-between;
-//      margin: 0 auto;
-  }
-
-//    &__logo:nth-of-type(2) {
-//      display: block;
-//    width: 150px;
-//    height: 60px;
-//    outline: 1px dashed;
-//    }
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 @media (min-width: @desktop-width) {
   .page-header {
     width: 1200px;
-
     position: absolute;
     background-color: rgba(0,0,0,0.3);
     top: 0;
     right: 0;
     left: 0;
-
-
     z-index: 1;
-
-//    display: flex;
-//    padding-left: 130px;
-//    padding-right: 130px;
-//    box-sizing: border-box;
+    
+    &--menu-closed &__toggle {
+      display: none;
+    }
+    &--menu-closed .main-nav {
+    display: block;
+  }
+    
+    button {
+      display: none;
+    }
+    &__toggle {
+      display: none;
+       &::before,
+      &::after {
+      display: none;
+      }
+    }
+     &--menu-closed &__toggle::before {
+    background:none;
+  }
+  
+  &--menu-closed &__toggle::after {
+    background:none;
+  }
 
     &__logo {
-        padding-top: 20px;
-    svg {
-    position: relative;
-    left: 2px;
-    bottom: -7px;
-    }
+      padding-top: 20px;
+      
+      svg {
+        position: relative;
+        left: 2px;
+        bottom: -7px;
+      }
     }
 
     &__wrapper {
-    width: 940px;
-       display: flex;
+      width: 940px;
+      display: flex;
       flex-direction: row;
       margin: 0 auto;
+    }
   }
-
-
-//    &__logo:nth-of-type(2) {
-//      display: block;
-//    width: 150px;
-//    height: 60px;
-//    outline: 1px dashed;
-//    }
-  }
-}
 }

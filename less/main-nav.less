@@ -77,6 +77,16 @@
       border-top: 1px solid #485461;
   border-bottom: 1px solid #000001;
     }
+    
+    a:hover {
+      color: #d22856;
+    }
+    a:active {
+      color: rgba(210,40,86, 0.3);
+    }
+    a[href]:active {
+      border-bottom: 1px solid white;
+    }
   }
 }
 @media (min-width: @tablet-width) {
@@ -111,7 +121,7 @@
 
     &__wrapper {
       width: 625px;
-      outline: 1px dashed white;
+ 
       font-weight: normal;
       text-transform: none;
       background-color: rgba(0,0,0,0.3);
