@@ -38,8 +38,7 @@ module.exports = function(grunt) {
       "build/css/style.css": ["less/style.less"]
       }
       }
-      },
-
+      },     
       postcss: {
       style: {
       options: {
@@ -61,7 +60,15 @@ module.exports = function(grunt) {
       }
       }
       },
-
+      
+      svg_cleaner: {
+    minifySvgs: {
+      files: {
+        'build/img': ['img/*.svg']
+      }
+      }
+    },
+            
     svgstore: {
       options: {
       includeTitleElement: false
@@ -142,7 +149,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
-  grunt.registerTask("build", ["clean", "copy", "svgstore", "less", "postcss", "csso", "posthtml"]);
+  grunt.registerTask("build", ["clean", "copy", "svg_cleaner", "picture", "less", "postcss", "csso", "posthtml"]);
   grunt.registerTask("picture", ["cwebp", "imagemin", "svgstore"]);
 
 };

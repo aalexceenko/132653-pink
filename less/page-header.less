@@ -2,33 +2,38 @@
   min-height: 65px;
   background-color:#283645;
   right: 0;
-  padding: 0;
+    position:relative;
   width: 320px;
   left: 0;
   margin: 0 auto;
-  
+margin-bottom:-67px;
+
   &--menu-closed {
     position:absolute;
     background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom:0;
   }
-  
   &--menu-closed .main-nav {
     display:none;
   }
-  
+
+  &--menu-closed .main-nav {
+    display:none;
+  }
+
   &--menu-closed &__toggle::before {
     background:none;
   }
-  
+
   &--menu-closed &__toggle::after {
     background:none;
   }
-  
+
   &--menu-closed &__toggle {
     background:url("../img/icon-menu-burger.svg") no-repeat;
     background-size:cover;
   }
-  
+
   &__wrapper {
     //    width: 320px;
     //    margin: 0 auto;
@@ -41,7 +46,7 @@
   &__logo {
     display: block;
     height: 70px;
-   
+
     padding-top: 8px;
     box-sizing: border-box;
 
@@ -57,7 +62,7 @@
 
   &__toggle {
     position:relative;
-    display: none;
+    visibility:hidden;
     top: 16px;
     left: -15px;
     width: 50px;
@@ -137,35 +142,35 @@
     right: 0;
     left: 0;
     z-index: 1;
-    
+
     &--menu-closed &__toggle {
       display: none;
     }
     &--menu-closed .main-nav {
     display: block;
   }
-    
+
     button {
       display: none;
     }
     &__toggle {
-      display: none;
-       &::before,
+      visibility: hidden;
+      &::before,
       &::after {
       display: none;
       }
     }
-     &--menu-closed &__toggle::before {
+    &--menu-closed &__toggle::before {
     background:none;
   }
-  
+
   &--menu-closed &__toggle::after {
     background:none;
   }
 
     &__logo {
       padding-top: 20px;
-      
+
       svg {
         position: relative;
         left: 2px;

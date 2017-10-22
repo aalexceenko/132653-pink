@@ -3,12 +3,12 @@
   position: relative;
   height: 255px;
   margin: 0 auto;
-  
+
 
 //    &:hover, &:active {
 //      background-color: #1c2530;
 //    }
-  
+
 
   &--closed &__toggle::before {
     position: absolute;
@@ -25,7 +25,7 @@
   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
 }
   &--opened &__toggle {
-   top: -40px;
+  top: -40px;
   right: 26px;
 
   &::before,
@@ -55,7 +55,7 @@
   &__wrapper {
     font-weight: bold;
     text-transform: uppercase;
-    background-color: #283645;
+    background-color: inherit;
 
   }
 
@@ -77,7 +77,7 @@
       border-top: 1px solid #485461;
   border-bottom: 1px solid #000001;
     }
-    
+
     a:hover {
       color: #d22856;
     }
@@ -94,7 +94,7 @@
     width: 660px;
 
     &__wrapper {
-//      background-color: none;
+      background-color: none;
 
     }
 
@@ -121,10 +121,10 @@
 
     &__wrapper {
       width: 625px;
- 
+
       font-weight: normal;
       text-transform: none;
-      background-color: rgba(0,0,0,0.3);
+      background-color: none;
 
     }
 
@@ -149,4 +149,3 @@
     }
   }
 }
-

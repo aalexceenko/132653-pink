@@ -1,12 +1,15 @@
 .social {
+      margin-bottom: 35px;
 
   &__list {
     display: flex;
     justify-content: space-between;
     width: 180px;
-    padding-left: 0;
-    padding-bottom: 35px;
+    //padding-left: 0;
+    //padding-bottom: 35px;
     margin: 0;
+    padding-left: 4px;
+    padding-top: 0px;
   }
 
   &__item {
@@ -41,4 +44,22 @@
       padding-top: 7px;
     }
   }
+}
+@media (min-width: @tablet-width) {
+.social {
+  &__list {
+
+    padding-left: 13px;
+    padding-top: 7px;
+  }
+}
+}
+@media (min-width: @desktop-width) {
+.social {
+  &__list {
+
+    padding-left: 29px;
+    padding-top: 6px;
+  }
+}
 }

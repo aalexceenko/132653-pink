@@ -18,6 +18,8 @@
     "grunt-juwain-posthtml": "^0.6.0",
     "grunt-mkdir": "^1.0.0",
     "grunt-postcss": "0.9.x",
+    "grunt-svg-cleaner": "^1.0.1",
+    "grunt-svgmin": "^4.0.0",
     "grunt-svgstore": "^1.0.0",
     "load-grunt-tasks": "^3.5.2",
     "posthtml-include": "^1.1.0",
