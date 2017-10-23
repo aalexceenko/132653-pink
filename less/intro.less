@@ -1,63 +1,55 @@
 .intro {
-
-
-    background-color: #1d2631;
+ background-color: #1d2631;
     width: 320px;
     margin: 0 auto;
 
     box-sizing: border-box;
-    padding-top: 470px;
+    padding-top: 467px;
     background-repeat: no-repeat;
     background-image: url(../img/bg-back-mobile@1x.jpg);
-background-position: -191px -66px;
 
+    background-position: -193px -2px;
 
-&__item a {
-  display:block;
-}
-
-
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    }
+  }
 
+  &__item a {
+    display:block;
+  }
 
   &__wrapper {
-    height:271px;
+    height: 242px;
     width: 320px;
     margin: 0 auto;
-
     background-color:#1d2631;
     padding-top: 24px;
     position:relative;
 
-
     &::before {
-    content: "";
-    background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-repeat:no-repeat;
-  background-size:contain;
-      position: absolute;
-      top: -286px;
+      content: url("../img/iphone-hand-mobile@1x.png");
+//      background-image: url("../img/iphone-hand-mobile@1x.png");
+//      background-repeat:no-repeat;
+//      background-size:contain;
+          position: absolute;
+    top: -293px;
       left: 0px;
       width: 258px;
       height: 286px;
       z-index:0;
 
-@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/iphone-hand-mobile@2x.png");
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/iphone-hand-mobile@2x.png");
+      }
     }
+  }
 
-
-    }
-}
   &__h1 {
     display: none;
   }
 
-  &__downland {
-color: white;
+  &__download {
+    color: white;
     font-weight: bold;
     text-decoration: none;
     display: block;
@@ -67,15 +59,15 @@ color: white;
     text-align: center;
     padding-top: 13px;
     border-radius: 50px;
-    margin: 26px 0 30px;
+    margin: 1px auto 30px;
     box-sizing: border-box;
     line-height: 18px;
   }
-  &__downland:hover {
+  &__download:hover {
     color: #d22856;
     background-color: #ffffff;
   }
-  &__downland:active {
+  &__download:active {
     color: rgba(210,40,86,0.3);
     background-color: #ffffff;
   }
@@ -85,7 +77,7 @@ color: white;
     list-style: none;
     display: flex;
     height: 57px;
-    margin: 0 37px 28px;
+    margin: 0 auto 26px;
     padding: 0;
     justify-content: space-between;
   }
@@ -129,7 +121,7 @@ color: white;
     width: 660px;
     height: 683px;
     background-size: auto 720px;
-    background-position: -252px -100px;
+    background-position: -252px -31px;
     background-image: url(../img/bg-back-tablet@1x.jpg);
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -189,7 +181,7 @@ color: white;
       margin-bottom: 37px;
     }
 
-    &__downland {
+    &__download {
       margin: 0;
       width: 300px;
       margin-bottom: 47px;
@@ -201,9 +193,10 @@ color: white;
     }
 
     &__text {
-      font-size: 18px;
-      text-align: inherit;
-      font-weight: lighter;
+         font-size: 18px;
+    text-align: center;
+    font-weight: lighter;
+    width: 297px;
     }
   }
 }

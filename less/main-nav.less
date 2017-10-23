@@ -82,10 +82,7 @@
       color: #d22856;
     }
     a:active {
-      color: rgba(210,40,86, 0.3);
-    }
-    a[href]:active {
-      border-bottom: 1px solid white;
+      color: #6c737c;
     }
   }
 }
@@ -136,11 +133,22 @@
       list-style: none;
       display: flex;
       justify-content: space-between;
+
+//      a[href="none"] {
+//      border-bottom: 1px solid white;
+//    }
     }
 
     &__item {
       display: inline-block;
       text-decoration: none;
+      position: relative;
+
+      &--active a {
+        border-bottom: 2px solid white;
+        border-top: none;
+            padding-top: 7px;
+      }
     }
 
     &__item a {

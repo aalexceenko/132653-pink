@@ -20,6 +20,28 @@
     border: 2px solid #e9ebec;
     border-radius: 50%;
 
+    &:hover {
+      border-color: #283645;
+      background-color: #fefefe;
+    }
+
+    &:active {
+      border-color: #e9ebec;
+      background-color: #ffffff;
+    }
+
+    &:active &-twitter {
+      fill: rgba(210,40,86, 0.3);
+    }
+
+    &:active &-facebook {
+      fill: rgba(210,40,86, 0.3);
+    }
+
+    &:active &-youtube {
+      fill: rgba(210,40,86, 0.3);
+    }
+
     &-twitter, &-facebook, &-youtube {
       fill: #d22856;
     }

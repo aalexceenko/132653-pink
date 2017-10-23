@@ -23,16 +23,44 @@ margin-bottom:-67px;
 
   &--menu-closed &__toggle::before {
     background:none;
+    content: none;
   }
 
   &--menu-closed &__toggle::after {
     background:none;
+    content: none;
   }
 
-  &--menu-closed &__toggle {
-    background:url("../img/icon-menu-burger.svg") no-repeat;
-    background-size:cover;
+  &--menu-closed &__toggle-burger{
+//    background:url("../img/icon-menu-burger.svg") no-repeat;
+//    background-size:cover;
+//    background-size: 50px 25px;
+
+      position: relative;
+          left: -5px;
+    top: -2px;
+    width: 50px;
+    height: 25px;
+      fill: #ffffff;
+display:block;
+    visibility:visible;
+    background-color: rgba(0, 0, 0, 0.3);
   }
+
+  &__toggle-burger{
+//   background: none;
+    display:none;
+    visibility: hidden;
+    background-color: #283645;
+    width: 30px;
+  }
+  &__toggle-burger:hover {
+    fill: #d22856;
+  }
+   &__toggle-burger:active {
+    fill: rgba(210,40,86, 0.3);
+  }
+
 
   &__wrapper {
     //    width: 320px;
@@ -50,27 +78,51 @@ margin-bottom:-67px;
     padding-top: 8px;
     box-sizing: border-box;
 
+    &:hover &-pink, &:hover &-glass, &:hover &-glasses {
+      fill: #d22856;
+
+    }
+    &:active &-pink, &:active &-glass, &:active &-glasses {
+      fill: rgba(255,255,255, 0.3);
+
+    }
+    &:active &-stars {
+      fill: rgba(210,40,86, 0.3);
+    }
+
     svg {
       position: relative;
       left: -50px;
       bottom: 3px;
     }
   }
-  &__logo:hover {
-    fill: #d22856;
-  }
+
 
   &__toggle {
     position:relative;
-    visibility:hidden;
+
+//    visibility:hidden;
     top: 16px;
     left: -15px;
     width: 50px;
     height: 25px;
     background-color: #283645;
+
+
     cursor: pointer;
     border: none;
     page-break-after:always;
+    background-image: none;
+    outline:0;
+
+    svg {
+
+//      visibility: hidden;
+//      position: relative;
+//          left: -5px;
+//    top: -2px;
+//      fill: #ffffff;
+    }
 
     &::before,
     &::after {
@@ -81,6 +133,14 @@ margin-bottom:-67px;
       width: 30px;
       height: 4px;
       background-color: #ffffff;
+      display: block;
+    }
+
+     &:hover::before, &:hover::after{
+      background-color: #d22856;
+    }
+      &:active::before, &:active::after{
+      background-color: rgba(210,40,86, 0.3);
     }
 
     &::before {

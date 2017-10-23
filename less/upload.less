@@ -8,7 +8,7 @@
   &__wrapper {
     width: 280px;
     margin: 0 auto;
-    padding-top: 19px;
+    padding-top: 22px;
 
     &-item {
       margin-top: 31px;
@@ -33,7 +33,7 @@
     }
 
 
-    &-downland {
+    &-download {
       border: 2px solid #d22856;
       color: #d22856;
       margin-bottom: 10px;
@@ -83,6 +83,10 @@
     button:not(:first-of-type) svg {
       fill: #b5b9be;
     }
+
+    button:hover svg {
+      fill: #8d949b;
+    }
   }
 
   input[type=range] {
@@ -103,7 +107,12 @@ height: 15px;
 border-radius: 50%;
 cursor: pointer;
 }
-  input[autofocus]:focus {
+    input[type='range']::-webkit-slider-thumb:active{
+-webkit-appearance: none;
+background-color: #d22856;
+
+}
+  input[type='range']:focus {
     outline: none;
 }
 
@@ -127,7 +136,7 @@ cursor: pointer;
 
     &__wrapper {
       width: 620px;
-      margin: 57px auto 0px;
+      margin: 57px auto 11px;
       padding-top: 60px;
       padding-bottom: 50px;
       height: 515px;
@@ -214,7 +223,7 @@ cursor: pointer;
 
     }
 
-    &-downland {
+    &-download {
       border: 4px solid #d22856;
 
       margin-bottom: 10px;
@@ -225,7 +234,7 @@ cursor: pointer;
 
     }
 
-      &-downland {
+      &-download {
         margin-bottom: 24px;
       }
     }

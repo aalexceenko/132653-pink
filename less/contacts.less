@@ -34,6 +34,23 @@
     margin: 0;
   }
 
+//  &__wrapper a:nth-of-type(2):hover {
+//        color: #283645;
+//    text-decoration: underline;
+//  }
+//   &__wrapper a:nth-of-type(2) span:hover {
+//        color: #283645;
+//    text-decoration: none;
+//  }
+  &__mail:hover &__mail-address{
+    color: #283645;
+    text-decoration: underline;
+  }
+ &__mail:active &__mail-address{
+    color: #cdcfd1;
+    text-decoration: none;
+  }
+
 }
 @media (min-width: @tablet-width) {
   .contacts {
