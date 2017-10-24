@@ -6,7 +6,7 @@
 
   &__title {
     color: #283645;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
     font-size: 24px;
     font-weight: lighter;
     text-align: center;
@@ -14,16 +14,17 @@
     padding-top: 44px;
   }
 
-  &__number-mobile, &__mail-text, &__adress-title {
+  &__number-mobile, &__mail-text, &__address-title {
     text-align: center;
     font-size: 18px;
     color: #283645;
     font-weight: bold;
-    padding-bottom: 12px;
+    padding-bottom: 2px;
     list-style: none;
+    margin:0;
   }
 
-  &__number, &__mail, &__adress {
+  &__number, &__mail, &__address {
     color: #d22856;
     text-decoration: none;
     display: block;
@@ -32,16 +33,9 @@
     box-sizing: border-box;
     padding-bottom: 15px;
     margin: 0;
+    font-weight:lighter;
   }
 
-//  &__wrapper a:nth-of-type(2):hover {
-//        color: #283645;
-//    text-decoration: underline;
-//  }
-//   &__wrapper a:nth-of-type(2) span:hover {
-//        color: #283645;
-//    text-decoration: none;
-//  }
   &__mail:hover &__mail-address{
     color: #283645;
     text-decoration: underline;
@@ -56,40 +50,49 @@
   .contacts {
     width: 620px;
     margin: 0 auto;
-  &__title {
-    font-size: 40px;
-    line-height: 40px;
-    padding-top: 53px;
-    margin-bottom: 47px;
-  }
+
+    &__title {
+      font-size: 40px;
+      line-height: 47px;
+      padding-top: 49px;
+      margin-bottom: 42px;
+    }
+
     &__wrapper {
       display: flex;
       flex-wrap: wrap;
-
     }
-    &__number, &__mail, &__adress {
-      width: 310px;
 
+    .contacts__mail {
+      padding-left:13px;
+    }
+
+    &__number, &__mail, &__address {
+      width: 310px;
       font-weight: lighter;
     }
-    &__adress {
-      flex-grow: 1;
-      margin-top: 27px;
+
+    &__number-mobile, &__mail-text, &__address-title {
+      padding-bottom: 0px;
     }
-      &__adress br {
-    display: block;
-  }
+
+    &__address {
+      margin-top: 27px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__address br {
+      display: block;
+    }
+
     &__map {
       height: 375px;
-
 
       img {
         display: none;
       }
     }
-//    &__logo {
-//      display: block;
-//    }
   }
 }
 @media (min-width: @desktop-width) {
@@ -97,36 +100,37 @@
     margin: 0 auto;
     width: 940px;
 
-
     &__title {
       font-size: 50px;
-          line-height: 54px;
-    margin-top: 15px;
+      line-height: 59px;
+      margin-top: 0;
+      padding-top: 65px;
     }
 
     &__wrapper {
       flex-wrap: nowrap;
-//      margin-left: 130px;
-//      margin-right: 130px;
       margin: 0 auto;
     }
-    &__number-mobile, &__mail-text, &__adress-title {
+
+    &__number-mobile, &__mail-text, &__address-title {
       display: block;
       padding-bottom: 0;
+      margin:0;
+      margin-bottom:20px;
     }
 
-    &__number, &__mail, &__adress {
-      width: 310px;
-
+    &__number, &__mail, &__address {
+      width: 296px;
+      padding-left: 54px;
       padding-top: 10px;
     }
-//    &__number-mobile, &__mail-text, &__adress-title {
-//      padding-bottom: 30px;
-//    }
 
-    &__adress {
+    &__address {
       flex-grow: 0;
       margin-top: 0;
+    }
+    &__mail {
+      margin-left: 25px;
     }
 
     &__mail {
@@ -135,7 +139,6 @@
 
     &__map {
       height: 375px;
-
 
       img {
         display: none;

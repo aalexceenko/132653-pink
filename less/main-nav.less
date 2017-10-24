@@ -4,12 +4,6 @@
   height: 255px;
   margin: 0 auto;
 
-
-//    &:hover, &:active {
-//      background-color: #1c2530;
-//    }
-
-
   &--closed &__toggle::before {
     position: absolute;
     top: 0;
@@ -19,37 +13,36 @@
     height: 4px;
     background-color: #ffffff;
     box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
-}
+  }
+
   &--closed &__toggle:active::before {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
-}
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+  }
+
   &--opened &__toggle {
-  top: -40px;
-  right: 26px;
+    top: -40px;
+    right: 26px;
 
-  &::before,
-  &::after {
-    content: "";
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 20px;
+      width: 36px;
+      height: 4px;
+      background-color: #ffffff;
+    }
 
-    position: absolute;
-    top: 4px;
-    left: 20px;
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
 
-    width: 36px;
-    height: 4px;
-
-    background-color: #ffffff;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 
   &__wrapper {
@@ -73,9 +66,8 @@
       box-sizing: border-box;
       color: #ffffff;
       line-height: 32px;
-
       border-top: 1px solid #485461;
-  border-bottom: 1px solid #000001;
+      border-bottom: 1px solid #000001;
     }
 
     a:hover {
@@ -92,13 +84,12 @@
 
     &__wrapper {
       background-color: none;
-
     }
 
     &__list {
 
       a {
-      padding-top: 15px;
+        padding-top: 15px;
       }
     }
   }
@@ -108,21 +99,18 @@
     display: block;
     height: 50px;
     margin: 0;
-    margin-right: -39px;
-    margin-top: 30px;
+    margin-right: -40px;
+    margin-top: 3px;
 
     &__toggle {
       display: none;
     }
 
-
     &__wrapper {
       width: 625px;
-
       font-weight: normal;
       text-transform: none;
       background-color: none;
-
     }
 
     &__toggle {
@@ -133,10 +121,6 @@
       list-style: none;
       display: flex;
       justify-content: space-between;
-
-//      a[href="none"] {
-//      border-bottom: 1px solid white;
-//    }
     }
 
     &__item {
@@ -147,7 +131,7 @@
       &--active a {
         border-bottom: 2px solid white;
         border-top: none;
-            padding-top: 7px;
+        padding-top: 7px;
       }
     }
 

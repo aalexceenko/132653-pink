@@ -10,9 +10,10 @@
     margin: 0 auto;
 
     svg {
-        display: none;
-      }
+      display: none;
+    }
   }
+
   &__autor-name {
     text-align: center;
     display: block;
@@ -21,9 +22,9 @@
     font-weight: bold;
   }
 
-    &__autor-profession, &__prev, &__next {
-      display: none;
-    }
+  &__autor-profession, &__prev, &__next {
+    display: none;
+  }
 
   &__text {
     font-size: 14px;
@@ -35,38 +36,11 @@
     margin: 0;
   }
 
-//  &__toggles {
-//    text-align: center;
-//    margin-top: 0;
-//    width: 63px;
-//    margin-bottom: 65px;
-//    margin: 0 auto;
-//    display: flex;
-//    justify-content: space-between;
-//
-//    button:first-child {
-//          list-style: none;
-//    width: 12px;
-//    height: 12px;
-//    border-radius: 7px;
-//    background-color: white;
-//    /* border-color: red; */
-//    padding: 0;
-//    border: 3px solid #283645;
-//    }
-//
-//    button:not(:first-child) {
-//          height: 7px;
-//    width: 7px;
-//    border-radius: 50%;
-//    background-color: #bec2c7;
-//    padding: 0;
-//    border: 0;
-//          margin-top: 3px;
-//    }
-//  }
+  &__btn-next, &__btn-prev {
+    display:none;
+  }
 
-    &__toggles {
+  &__toggles {
     text-align: center;
     margin-top: 0;
     width: 63px;
@@ -86,32 +60,31 @@
 
       &:hover {
         background-color: #7e868f;
-
       }
+
       &:active {
         background-color: #e9ebec;
         outline: none;
       }
+
       &-active {
-          list-style: none;
-    width: 12px;
-    height: 12px;
-    border-radius: 7px;
-    background-color: white;
-    padding: 0;
-    border: 3px solid #283645;
-    }
+        list-style: none;
+        width: 12px;
+        height: 12px;
+        border-radius: 7px;
+        background-color: white;
+        padding: 0;
+        border: 3px solid #283645;
+      }
     }
   }
 }
 @media (min-width: @tablet-width) {
   .reviews {
     padding-top: 0;
-    margin-top: 135px;
-
-//    display: flex;
-//    flex-direction: column;
+    margin-top: 133px;
     width: 620px;
+
     &__wrapper {
       width: 620px;
       margin: 0 auto;
@@ -122,19 +95,22 @@
         display: none;
       }
     }
+
     &__list {
       margin: 0 auto;
     }
-      &__autor-name {
-    text-align: center;
-    font-style: normal;
-    color: #000000;
-        font-size: 20px;
+
+    &__autor-name {
+      text-align: center;
+      font-style: normal;
+      color: #000000;
+      font-size: 20px;
       line-height: 30px;
-    font-weight: bold;
-        order: 1;
-        padding-bottom: 4px;
-  }
+      font-weight: bold;
+      order: 1;
+      padding-bottom: 4px;
+    }
+
     &__autor-profession {
       font-size: 14px;
       line-height: 30px;
@@ -148,34 +124,35 @@
       display: none;
     }
 
-  &__text {
-    font-size: 18px;
-    line-height: 30px;
-    margin-top: -12px;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 32px;
-    width: 620px;
+    &__text {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: -12px;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 37px;
+      width: 620px;
+    }
 
-  }
+    &__toggles {
+      width:59px;
+      text-align: center;
+      margin-top: 18px;
+      margin-bottom: 0;
+    }
 
-  &__item {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__toggles {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0;
-  }
+    &__item {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 @media (min-width: @desktop-width) {
   .reviews {
     width: 940px;
     position: relative;
+
     &__wrapper {
       width: 940px;
       height: 235px;
@@ -186,30 +163,28 @@
       }
     }
 
+    &__quotes {
+      position: absolute;
+      left: 435px;
+      bottom: 292px;
+      width: 77px;
+      height: 170px;
+      display: block;
+      fill: #efefef;
+    }
 
-      &__quotes {
-          position: absolute;
-    left: 435px;
-    bottom: 292px;
-    width: 77px;
-    height: 170px;
-    display: block;
-    fill: #efefef;
-
-
-      }
-
-      &__list {
+    &__list {
       margin: 0 auto;
     }
-          &__autor-name {
-    text-align: center;
-    font-style: normal;
-    color: #000000;
-    font-weight: bold;
 
-            font-size: 24px;
-  }
+    &__autor-name {
+      text-align: center;
+      font-style: normal;
+      color: #000000;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
     &__autor-profession {
       display: block;
       text-align: center;
@@ -224,28 +199,28 @@
 //visibility: hidden;
 //    }
     &__btn {
-
-
       &-prev {
-            position: absolute;
-      top: 71px;
-    left: -4px;
-           background-color: white;
+        position: absolute;
+        top: 75px;
+        left: -4px;
+        background-color: white;
         border: 0;
-    outline: 0;
-
+        outline: 0;
+        display:block;
       }
+
       &-next {
-           position: absolute;
-               background-color: white;
+        position: absolute;
+        background-color: white;
         border: 0;
-    outline: 0;
-         top: 74px;
-    left: 913px;
+        outline: 0;
+        top: 74px;
+        left: 913px;
+        display:block;
       }
     }
-    &__prev {
 
+    &__prev {
       fill: #bec2c7;
     }
 
@@ -254,34 +229,27 @@
     }
 
     &__btn-prev:hover &__prev, &__btn-next:hover &__next {
-fill: #7e868f;
-    }
-       &__btn-prev:active &__prev, &__btn-next:active &__next {
-fill: #e9ebec;
+      fill: #7e868f;
     }
 
+     &__btn-prev:active &__prev, &__btn-next:active &__next {
+      fill: #e9ebec;
+    }
 
+    &__text {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 34px;
+      width: 690px;
+      box-sizing: border-box;
+      padding-top: 62px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
 
-
-  &__text {
-    text-align: center;
-    padding: 0;
-    margin-bottom: 32px;
-    width: 690px;
-        box-sizing: border-box;
-    padding-top: 60px;
-        margin-left: auto;
-    margin-right: auto;
-    position: relative;
-
-  }
-
-  &__item {
-
-  }
-
-  &__toggles {
-display: none;
-  }
+    &__toggles {
+      display: none;
+    }
   }
 }
