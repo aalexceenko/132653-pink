@@ -63,6 +63,22 @@
     fill: rgba(210,40,86, 0.3);
   }
 
+  &__toggle:focus &__toggle-burger {
+//    fill: rgba(210,40,86, 0.6);
+    fill: red;
+  }
+  &__toggle:focus {
+    border-bottom:0;
+  }
+  &__toggle:focus::before, &__toggle:focus::after {
+    background-color:#d22856;
+  }
+
+//  &__toggle:focus path {
+//    border-bottom: none;
+//    fill: red;
+//  }
+
   &__wrapper {
     //    width: 320px;
     //    margin: 0 auto;

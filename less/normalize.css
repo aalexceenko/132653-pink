@@ -452,3 +452,13 @@ template {
 object {
   pointer-events:none;
 }
+a:focus, button:focus, input:not([type="text"]):not([type="checkbox"]):not([type="radio"]):focus{
+  outline:0;
+  border-bottom:2px solid #d22856;
+}
+input[type="checkbox"]:focus+label, input[type="radio"]:focus+label {
+  border-bottom:2px solid #d22856;
+}
+a:focus path, button:focus path {
+  //fill: #d22856;
+}

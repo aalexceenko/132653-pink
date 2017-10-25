@@ -58,6 +58,7 @@
   &__name input, &__contacs input {
     width: 280px;
     height: 60px;
+    font-size: 18px;
     margin-top: 5px;
     margin-bottom: 18px;
     padding-left: 15px;
@@ -142,7 +143,7 @@
       outline-color: #283645;
     }
 
-     input[type="checkbox"]:active+label::before, label:active::before {
+    input[type="checkbox"]:active+label::before, label:active::before {
       outline-color: #d22856;
     }
   }
@@ -258,16 +259,18 @@
       margin-bottom: 16px;
     }
 
-     textarea {
-        width: 278px;
-        margin-bottom: 18px;
-        padding-top: 22px;
-        height: 200px;
-        box-sizing: border-box;
-        padding-left: 21px;
-        border: none;
-        resize: none;
-        outline: 2px solid #e5e5e5;
+    textarea {
+      width: 278px;
+      margin-bottom: 18px;
+      padding-top: 16px;
+      font-size: 18px;
+      line-height: 30px;
+      height: 200px;
+      box-sizing: border-box;
+      padding-left: 21px;
+      border: none;
+      resize: none;
+      outline: 2px solid #e5e5e5;
     }
   }
 
@@ -391,15 +394,16 @@
         margin-top: -5px;
       }
 
-      &-item input{
+      &-item input {
         width: 520px;
         margin-top: 10px;
         padding-left: 13px;
+        font-size: 18px;
       }
 
-        &-item:nth-of-type(2) input{
-          width: 561px;
-          margin-bottom: 20px;
+      &-item:nth-of-type(2) input {
+        width: 561px;
+        margin-bottom: 20px;
       }
     }
 
@@ -509,6 +513,7 @@
         margin-bottom: 75px;
         position: relative;
         display: block;
+        padding-left: 10px;
       }
 
       label::after {
@@ -718,6 +723,7 @@
         margin-bottom: 22px;
         width: 334px;
         margin-top: 14px;
+        font-size: 18px;
       }
 
       &-item {
@@ -800,6 +806,7 @@
 
     &__progress {
       height: 231px;
+      width:100%;
 
       &-wrapper {
         width: 940px;
