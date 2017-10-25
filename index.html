@@ -156,7 +156,7 @@
           <article class="advantages__item">
             <img class="advantages__item-img" src="#" alt="Поднимает настроение">
             <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <p class="advantages__description">Приложение позволит вам победить<br> осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </article>
           <article class="advantages__item">
             <img class="advantages__item-img" src="#" alt="Меняет мир вокруг">
@@ -188,7 +188,7 @@
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__autor-name">Николай Петров</cite>
             <p class="reviews__autor-profession">25 лет, водитель трамвая</p>
-            <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            <p class="reviews__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187; </p>
           </blockquote>
           <button class="reviews__btn-prev" type="button">
             <svg class="reviews__prev" width="22" height="42"><use xlink:href="#icon-review-arrow-left"></use></svg>
@@ -250,8 +250,8 @@
         <div class="contacts__address"><p class="contacts__address-title">Приезжайте в гости:</p>ул.&nbsp;Большая Конюшенная,&nbsp;19/8</div>
       </article>
     </section>
-    <div class="page-footer__map">
-      <iframe src="https://www.google.com/maps/d/embed?mid=18rWSpz1Cnk0ydUPY9e1zUaE6mU8" width="1200" height="502"></iframe>
+    <div class="page-footer__map" id="map">
+
     </div>
     <section class="page-footer__logo-index">
       <a href="#" class="page-footer__pink">
@@ -355,5 +355,7 @@
     </section>
   </footer>
   <script src="js/script.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="../js/map.js" type="text/javascript"></script>
   </body>
 </html>

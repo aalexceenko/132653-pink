@@ -59,6 +59,7 @@
     &:hover &-htmlacademy {
       fill: #283645;
     }
+
     &:active &-htmlacademy {
       fill: #bec2c7;
     }
@@ -88,22 +89,23 @@
   }
 
   &__map {
-    width: 320px;
+    position:relative;
+    left:0;
+    width: 100vw;
     height: 200px;
-    margin: 0 auto;
-    height: 200px;
-    position: relative;
     overflow: hidden;
+    min-width:320px;
 
     &::before {
       content: "";
       background-image:url("../img/bg-triangle-white-footer.svg");
       background-repeat:no-repeat;
-      background-size:cover;
+      background-size:contain;
       position: absolute;
-      top: -1px;
-      left: 0px;
-      right:0;
+      top: -2px;
+      left:~"calc(50% - 320px / 2)";
+      width:320px;
+      z-index:10;
       height:33px;
     }
   }
@@ -191,13 +193,13 @@
 //    }
 
     &__map {
-      width: 660px;
       height: 375px;
-      margin: 0 auto;
       margin-top: 10px;
 
       &::before {
         height:72px;
+        left:calc(~"50% - "@tablet-width~" / 2");
+        width:@tablet-width;
       }
     }
   }
@@ -252,13 +254,15 @@
     }
 
     &__map {
-      width: 1200px;
+
       margin-top: -4px;
       height: 509px;
       margin-bottom: 0;
 
       &::before {
         height:128px;
+        left:calc(~"50% - " @desktop-width~" / 2");
+        width:@desktop-width;
       }
     }
 

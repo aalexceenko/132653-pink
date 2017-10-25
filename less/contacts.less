@@ -3,6 +3,7 @@
 //  width: 320px;
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 24px;
 
   &__title {
     color: #283645;
@@ -40,11 +41,11 @@
     color: #283645;
     text-decoration: underline;
   }
- &__mail:active &__mail-address{
+
+  &__mail:active &__mail-address{
     color: #cdcfd1;
     text-decoration: none;
   }
-
 }
 @media (min-width: @tablet-width) {
   .contacts {
@@ -121,7 +122,7 @@
 
     &__number, &__mail, &__address {
       width: 296px;
-      padding-left: 54px;
+      padding-left: 14px;
       padding-top: 10px;
     }
 
@@ -129,6 +130,7 @@
       flex-grow: 0;
       margin-top: 0;
     }
+
     &__mail {
       margin-left: 25px;
     }

@@ -138,12 +138,11 @@
       background-position: center;
     }
 
-    input[type="checkbox"]:hover+label::before {
+    input[type="checkbox"]:hover+label::before, label:hover::before{
       outline-color: #283645;
-
     }
 
-     input[type="checkbox"]:active+label::before {
+     input[type="checkbox"]:active+label::before, label:active::before {
       outline-color: #d22856;
     }
   }
@@ -233,11 +232,11 @@
       background-position: center;
     }
 
-      input[type="radio"]:hover+label::before {
+      input[type="radio"]:hover+label::before, label:hover::before {
         border:  1px solid #283645;
       }
 
-      input[type="radio"]:active+label::before {
+      input[type="radio"]:active+label::before, label:active::before  {
         border:  1px solid #d22856;
       }
   }

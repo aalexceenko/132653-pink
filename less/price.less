@@ -25,9 +25,9 @@
       fill: #3dc644;
       position: absolute;
       top: 19px;
-      width: 46px;
+      width: 48px;
       height:22px;
-      right: 11px;
+      right: 20px;
     }
 
     &-no {
@@ -189,10 +189,11 @@
     }
 
     &__icon {
+
       &-yes {
         top: 9px;
         height:22px;
-        right: 52px;
+        right: 60px;
       }
 
       &-no {
@@ -221,11 +222,13 @@
 
       tr:first-child th:nth-of-type(3)::before {
         content: url("../img/bg-hit-tablet.svg");
+        top: 0;
+        left: 1px;
       }
 
       tr:first-child th:nth-of-type(3)::after {
-        top: 3px;
-        left: 8px;
+        top: 5px;
+        left: 11px;
       }
 
       th {
@@ -275,7 +278,7 @@
 @media (min-width: @desktop-width) {
   .price {
     width: 1200px;
-    margin-top: -76px;
+    margin-top: -69px;
     height: 534px;
 
       &::before {
@@ -284,6 +287,7 @@
       }
 
       &__icon {
+
         &-yes {
           top: 17px;
           right: 100px;

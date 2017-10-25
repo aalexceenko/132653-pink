@@ -19,6 +19,7 @@
   }
 
   &__button {
+
     button {
       font-size: 18px;
       line-height: 18px;
@@ -70,6 +71,11 @@
     margin-bottom: 10px;
     align-content: center;
 
+    &--bright {
+      //display:flex;
+      overflow:visible;
+    }
+
     button {
       border: none;
       background-color: inherit;
@@ -118,8 +124,22 @@
     outline: none;
   }
 
-  &__range input:not(:first-child) {
-    display: none;
+  &__range {
+    position: relative;
+
+    input:not(:first-child) {
+      display: none;
+    }
+
+    input:first-of-type::after {
+      content: "";
+      width: 319px;
+      height: 1px;
+      background-color: #dddfe0;
+      position: absolute;
+      top: 57px;
+      left: -19px;
+    }
   }
 
   &__toggle {
@@ -178,7 +198,7 @@
         margin-top: 5px;
       }
 
-      button svg {
+      button:not(&--bright) svg {
         fill: #d22856;
         width: 25px;
         height: 25px;
@@ -188,10 +208,10 @@
         fill: #d22856;
       }
 
-      button:nth-of-type(3) svg {
+      &--bright svg {
         width: 17px;
         height: 22px;
-        padding-left: 6px;
+        padding-left: 7px;
       }
     }
 
@@ -202,11 +222,36 @@
 
       input {
         width: 202px;
-        margin-bottom: 69px;
+        margin-bottom: 70px;
       }
 
       input:nth-of-type(2), input:nth-of-type(3) {
         display: block;
+      }
+
+      input:first-of-type::after {
+        width: 270px;
+        left: -35px;
+      }
+
+      input:nth-of-type(2)::after {
+        width: 270px;
+        left: -35px;
+        top: 129px;
+        height: 1px;
+        background-color: #dddfe0;
+        position: absolute;
+        content: "";
+      }
+
+      input:nth-of-type(3)::after {
+        width: 270px;
+        left: -35px;
+        top: 199px;
+        height: 1px;
+        background-color: #dddfe0;
+        position: absolute;
+        content: "";
       }
     }
 
@@ -257,6 +302,28 @@
 
       input {
         width: 289px;
+        margin-bottom: 71px;
+      }
+
+      input:nth-of-type(2) {
+        margin-bottom: 70px;
+      }
+
+      input:first-of-type::after {
+        width: 407px;
+        left: -57px;
+      }
+
+      input:nth-of-type(2)::after {
+        width: 407px;
+        left: -57px;
+        top: 129px;
+      }
+
+      input:nth-of-type(3)::after {
+        width: 407px;
+        left: -57px;
+        top: 199px;
       }
     }
 
@@ -272,7 +339,7 @@
         height: 45px;
       }
 
-      button svg {
+      button:not(&--bright) svg {
         fill: #d22856;
         width: 50px;
         height: 45px;
@@ -281,12 +348,12 @@
       button:not(:first-of-type) svg {
         fill: #d22856;
       }
-
-      button:nth-of-type(3) svg {
-        padding-left: 9px;
-        margin-top: -3px;
+      &--bright svg {
+        padding-left: 0;
+        margin-left:auto;
         width: 30px;
         height: 30px;
+        display:block;
       }
     }
 
@@ -294,7 +361,7 @@
       display: flex;
       justify-content: space-between;
       width: 414px;
-      margin-top: 114px;
+      margin-top: 109px;
       padding-left: 11px;
 
       button {
